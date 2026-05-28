@@ -1,0 +1,224 @@
+# ==============================================================
+# AtlasOps AI — Project Requirements
+# ==============================================================
+# This file documents all system, runtime, and dependency
+# requirements for building, running, and deploying AtlasOps AI.
+#
+# For Node.js projects, dependencies are managed via package.json.
+# This file serves as a human-readable requirements reference.
+# ==============================================================
+
+
+# ==============================================================
+# SYSTEM REQUIREMENTS
+# ==============================================================
+
+[System]
+Operating System     = Windows 10+ / macOS 12+ / Linux (Ubuntu 20.04+)
+Node.js              >= 18.0.0
+npm                  >= 9.0.0
+Git                  >= 2.30.0
+Disk Space           >= 500 MB (including node_modules)
+RAM                  >= 4 GB (recommended 8 GB for development)
+Browser              = Chrome 90+ / Firefox 90+ / Safari 15+ / Edge 90+
+
+
+# ==============================================================
+# PRODUCTION DEPENDENCIES
+# ==============================================================
+
+[Framework]
+next                 = 16.2.6       # React framework (App Router, Turbopack)
+react                = 19.2.4       # UI library
+react-dom            = 19.2.4       # React DOM renderer
+
+[Styling]
+tailwindcss          = ^4           # Utility-first CSS framework
+tailwind-merge       = ^3.6.0      # Tailwind class conflict resolver
+class-variance-authority = ^0.7.1  # Component variant API
+clsx                 = ^2.1.1      # Conditional classNames utility
+tw-animate-css       = ^1.4.0      # Tailwind animation classes
+
+[Data Visualization]
+recharts             = ^3.8.1      # Composable chart library (React)
+lucide-react         = ^1.16.0     # Icon library (200+ icons)
+framer-motion        = ^12.40.0    # Animation library
+
+[File Processing]
+papaparse            = ^5.5.3      # CSV parser (streaming, RFC 4180)
+xlsx                 = ^0.18.5     # Excel/XLSX file parser (SheetJS)
+pdfjs-dist           = ^5.7.284    # PDF text extraction (Copilot/Reports)
+jspdf                = ^4.2.1      # PDF generation for report export
+
+[State & Storage]
+idb-keyval           = ^6.2.4      # IndexedDB key-value wrapper
+@supabase/supabase-js = ^2.106.2   # Supabase client (optional persistence)
+
+[AI / LLM]
+# Groq API (external, no npm package)
+# Model: llama-3.3-70b-versatile
+# Endpoint: https://api.groq.com/openai/v1/chat/completions
+# Auth: Bearer token via GROQ_API_KEY environment variable
+# NOTE: Optional — platform operates fully without this
+
+[UI Components]
+@base-ui/react       = ^1.5.0      # Unstyled React component primitives
+shadcn               = ^4.8.1      # Component scaffolding (pre-built)
+react-dropzone       = ^15.0.0     # Drag-and-drop file upload
+date-fns             = ^4.3.0      # Date formatting and manipulation
+
+
+# ==============================================================
+# DEVELOPMENT DEPENDENCIES
+# ==============================================================
+
+[Build Tools]
+typescript           = ^5           # Static type checking
+@tailwindcss/postcss = ^4           # PostCSS plugin for Tailwind
+tsx                  = ^4.22.3      # TypeScript execution (scripts)
+
+[Testing]
+vitest               = ^4.1.7      # Test runner (88 tests, ~700ms)
+
+[Linting]
+eslint               = ^9           # JavaScript/TypeScript linter
+eslint-config-next   = 16.2.6      # Next.js ESLint rules
+
+[Type Definitions]
+@types/node          = ^20          # Node.js type definitions
+@types/react         = ^19          # React type definitions
+@types/react-dom     = ^19          # React DOM type definitions
+@types/papaparse     = ^5.5.2      # PapaParse type definitions
+
+[Environment]
+dotenv               = ^17.4.2     # Environment variable loading
+
+
+# ==============================================================
+# ENVIRONMENT VARIABLES
+# ==============================================================
+
+[Required: None]
+# The platform runs fully without any environment variables.
+# All analytics engines are deterministic and client-side.
+
+[Optional]
+GROQ_API_KEY                    # Groq API key — enables Copilot LLM and executive summaries
+NEXT_PUBLIC_SUPABASE_URL        # Supabase project URL — enables persistent workspace storage
+NEXT_PUBLIC_SUPABASE_ANON_KEY   # Supabase anon key — enables client-side authentication
+
+
+# ==============================================================
+# API REQUIREMENTS (EXTERNAL)
+# ==============================================================
+
+[Groq API — Optional]
+Provider             = Groq (groq.com)
+Model                = llama-3.3-70b-versatile
+Endpoint             = https://api.groq.com/openai/v1/chat/completions
+Auth                 = Bearer Token
+Rate Limit           = 30 RPM (free tier)
+Timeout              = 5000ms
+Fallback             = Deterministic analytics mode (no LLM)
+
+[Supabase — Optional]
+Provider             = Supabase (supabase.com)
+Usage                = Persistent workspace storage
+Protocol             = REST + WebSocket
+Auth                 = Anonymous key (row-level security)
+Fallback             = IndexedDB (client-side only)
+
+
+# ==============================================================
+# BROWSER REQUIREMENTS
+# ==============================================================
+
+[Minimum Browser Support]
+Chrome               >= 90
+Firefox              >= 90
+Safari               >= 15
+Edge                 >= 90
+
+[Required Browser APIs]
+IndexedDB            # Client-side data persistence
+Fetch API            # Network requests
+File API             # CSV/XLSX upload processing
+Blob API             # Export file generation
+AbortController      # Request timeout management
+TextEncoder          # String encoding for exports
+URL.createObjectURL  # Download link generation
+
+
+# ==============================================================
+# DEPLOYMENT REQUIREMENTS
+# ==============================================================
+
+[Vercel — Recommended]
+Plan                 = Free tier sufficient
+Build Command        = npm run build
+Output Directory     = .next
+Node.js Version      = 18.x or 20.x
+Environment Vars     = GROQ_API_KEY (optional)
+
+[Self-Hosted]
+Server               = Any Node.js 18+ host
+Build                = npm run build
+Start                = npm run start
+Port                 = 3000 (default)
+
+
+# ==============================================================
+# DEVELOPMENT VALIDATION
+# ==============================================================
+
+[Build]
+Command              = npm run build
+Status               = 0 errors
+Routes               = 14 static + 8 dynamic
+
+[TypeScript]
+Command              = npx tsc --noEmit
+Status               = 0 errors
+
+[Lint]
+Command              = npx eslint src/ --max-warnings 0
+Status               = 0 errors, 0 warnings
+
+[Tests]
+Command              = npm run test
+Framework            = Vitest 4.1.7
+Count                = 88 tests
+Duration             = ~700ms
+Status               = All passing
+
+
+# ==============================================================
+# FONTS (LOADED VIA GOOGLE FONTS / NEXT.JS)
+# ==============================================================
+
+[Typography]
+Inter                = 400, 500, 600, 700   # Primary UI font
+IBM Plex Mono        = 400, 500             # Runtime values, schemas, console
+
+
+# ==============================================================
+# DESIGN SYSTEM TOKENS
+# ==============================================================
+
+[Color Palette]
+Background           = #1A1D21    # Deep Graphite
+Sidebar              = #121E3A    # Midnight Blue
+Primary              = #4A90E2    # Operational Blue
+Muted Text           = #8A9099    # Soft Silver
+Foreground           = #F5F7FA    # Off White
+Border               = #2A2E35    # Structural Border
+Critical             = #C74B4B    # Muted Red
+Warning              = #D4A843    # Amber
+Positive             = #5BAD6E    # Restrained Green
+
+[Spacing]
+Border Radius        = 6px (0.375rem)
+Base Font Size       = 13px
+Table Row Padding    = 7px 12px
+Table Header Size    = 10px uppercase
+KPI Value Size       = 20px mono
