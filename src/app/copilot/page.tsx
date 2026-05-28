@@ -10,7 +10,7 @@ import { useWorkspace } from "@/context/workspace-context";
 import { WorkspaceActions } from "@/components/workspace-actions";
 import { computeBookingAnalytics, computeAgentAnalytics, computeDestinationAnalytics, detectAnomalies, computeMonthlyTrends } from "@/lib/analytics";
 import { generateInsights } from "@/lib/insight-engine";
-import { formatCurrency, cn, timeAgo } from "@/lib/utils";
+import { formatCurrency, cn } from "@/lib/utils";
 import { Send, Terminal, Activity, AlertTriangle, Database, Clock, Zap } from "lucide-react";
 
 // --- Types ---

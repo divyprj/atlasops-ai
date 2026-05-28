@@ -140,7 +140,7 @@ export default function AgentsPage() {
   const needsReview = agents.filter(a => a.performanceTier === "needs_improvement").length;
   const avgResp = Math.round(agents.reduce((s, a) => s + a.avgResponseTime, 0) / (agents.length || 1));
 
-  const SortHeader = ({ label, field }: { label: string; field: SortKey }) => (
+  const renderSortHeader = (label: string, field: SortKey) => (
     <th
       className="text-[11px] font-medium text-muted-foreground uppercase text-right px-3 py-2 cursor-pointer hover:text-foreground transition-colors select-none"
       onClick={() => toggleSort(field)}
@@ -219,11 +219,11 @@ export default function AgentsPage() {
                 <th className="text-[11px] font-medium text-muted-foreground uppercase text-left px-4 py-2 w-8">#</th>
                 <th className="text-[11px] font-medium text-muted-foreground uppercase text-left px-3 py-2">Agent</th>
                 <th className="text-[11px] font-medium text-muted-foreground uppercase text-left px-3 py-2">Tier</th>
-                <SortHeader label="Score" field="performanceScore" />
-                <SortHeader label="Revenue" field="totalRevenue" />
-                <SortHeader label="Conv %" field="conversionRate" />
-                <SortHeader label="Cancel %" field="cancellationRatio" />
-                <SortHeader label="Resp (min)" field="avgResponseTime" />
+                {renderSortHeader("Score", "performanceScore")}
+                {renderSortHeader("Revenue", "totalRevenue")}
+                {renderSortHeader("Conv %", "conversionRate")}
+                {renderSortHeader("Cancel %", "cancellationRatio")}
+                {renderSortHeader("Resp (min)", "avgResponseTime")}
               </tr>
             </thead>
             <tbody>

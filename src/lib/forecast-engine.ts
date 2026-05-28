@@ -8,10 +8,8 @@ import { Booking } from "@/types";
 import {
   computeMonthlyTrends,
   computeDestinationAnalytics,
-  sum,
   mean,
   stdDev,
-  rollingAverage,
   groupBy,
 } from "./analytics";
 

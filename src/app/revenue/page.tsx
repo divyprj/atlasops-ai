@@ -5,7 +5,7 @@ import { useWorkspace } from "@/context/workspace-context";
 import { WorkspaceActions } from "@/components/workspace-actions";
 import { KPICard } from "@/components/dashboard/kpi-card";
 import { computeMonthlyTrends, computeDestinationAnalytics, computeRegionalAnalytics, computeBookingAnalytics } from "@/lib/analytics";
-import { formatCurrency, cn } from "@/lib/utils";
+import { formatCurrency } from "@/lib/utils";
 import {
   ComposedChart, Area, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid,
   Tooltip, ResponsiveContainer, Legend,
@@ -84,7 +84,7 @@ export default function RevenuePage() {
   const totalProfit = summary.totalProfit;
   const profitMargin = summary.profitMargin;
   const aov = summary.avgOrderValue;
-  const revenueGrowth = summary.internationalShare; // use as a proxy
+
 
   const monthlyRevenue = monthly.map(m => ({
     date: m.month,

@@ -6,7 +6,7 @@
 import { AIInsight, OperationalAlert, ActivityItem } from "@/types";
 import { bookings } from "./bookings";
 import { generateInsights, OperationalInsight } from "@/lib/insight-engine";
-import { detectOperationalAnomalies, computeOperationalRiskScore, Anomaly } from "@/lib/anomaly-engine";
+import { detectOperationalAnomalies, computeOperationalRiskScore } from "@/lib/anomaly-engine";
 
 // --- Generate insights from actual data ---
 const generatedInsights = generateInsights(bookings);

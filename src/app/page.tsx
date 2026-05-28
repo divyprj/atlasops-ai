@@ -1,18 +1,14 @@
 "use client";
 
 import React, { useMemo } from "react";
-import Link from "next/link";
 import { useWorkspace } from "@/context/workspace-context";
 import { KPICard } from "@/components/dashboard/kpi-card";
 import { WorkspaceActions } from "@/components/workspace-actions";
-import { formatCurrency, cn, timeAgo } from "@/lib/utils";
+import { formatCurrency, cn } from "@/lib/utils";
 import { computeOperationalScorecard } from "@/lib/kpi-engine";
 import { computeMonthlyTrends, computeDestinationAnalytics, computeRegionalAnalytics } from "@/lib/analytics";
 import { exportToCSV, generateExecutiveSummaryText } from "@/lib/exports";
-import {
-  AlertTriangle, Info, Bookmark, XCircle, UserCheck, Bell, Download,
-  ArrowRight, BarChart3, TrendingUp, Shield, Brain,
-} from "lucide-react";
+import { Download } from "lucide-react";
 import {
   AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid,
   Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend,
@@ -269,7 +265,7 @@ function Dashboard({ bookings }: { bookings: import("@/types").Booking[] }) {
 // --- Main Page ---
 
 export default function CommandCenter() {
-  const { isReady, isEmpty, isLoading, dataset } = useWorkspace();
+  const { isEmpty, isLoading, dataset } = useWorkspace();
 
   if (isLoading) {
     return (

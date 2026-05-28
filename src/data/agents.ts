@@ -5,7 +5,7 @@
 
 import { Agent } from "@/types";
 import { bookings } from "./bookings";
-import { computeAgentAnalytics, computeMonthlyTrends, groupBy, sum, mean } from "@/lib/analytics";
+import { computeAgentAnalytics, groupBy, sum, mean } from "@/lib/analytics";
 
 // Agent metadata (static — identity, join dates, regions)
 const agentMeta: Record<string, { name: string; email: string; avatar: string; region: string; joinDate: string }> = {

@@ -11,9 +11,7 @@ import {
   computeDestinationAnalytics,
   computeAgentAnalytics,
   growthRate,
-  mean,
   rollingAverage,
-  groupBy,
   sum,
 } from "./analytics";
 
@@ -46,17 +44,6 @@ export interface OperationalScorecard {
 }
 
 // --- Period Helpers ---
-
-function splitByPeriod(bookings: Booking[], splitDate: string) {
-  const split = new Date(splitDate).getTime();
-  const current: Booking[] = [];
-  const previous: Booking[] = [];
-  for (const b of bookings) {
-    if (new Date(b.bookingDate).getTime() >= split) current.push(b);
-    else previous.push(b);
-  }
-  return { current, previous };
-}
 
 function getLatestMonths(bookings: Booking[], months: number) {
   const sorted = [...bookings].sort((a, b) =>

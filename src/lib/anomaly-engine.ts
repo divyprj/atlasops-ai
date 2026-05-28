@@ -7,10 +7,8 @@
 import { Booking } from "@/types";
 import {
   groupBy,
-  sum,
   mean,
   stdDev,
-  zScore,
   computeMonthlyTrends,
   computeDestinationAnalytics,
   computeAgentAnalytics,
@@ -46,7 +44,7 @@ export function detectOperationalAnomalies(bookings: Booking[]): Anomaly[] {
     const cancelMean = mean(cancelRates);
     const cancelSD = stdDev(cancelRates);
 
-    monthly.forEach((m, i) => {
+    monthly.forEach((m, _i) => {
       if (cancelSD > 0) {
         const z = (m.cancellationRate - cancelMean) / cancelSD;
         if (z > 1.8) {
@@ -135,7 +133,6 @@ export function detectOperationalAnomalies(bookings: Booking[]): Anomaly[] {
 
   // --- 5. Refund Pattern Analysis ---
   const refunded = bookings.filter(b => b.paymentStatus === "refunded");
-  const refundRate = bookings.length > 0 ? (refunded.length / bookings.length) * 100 : 0;
   const refundByMonth = groupBy(refunded, b => b.bookingDate.substring(0, 7));
   const totalByMonth = groupBy(bookings, b => b.bookingDate.substring(0, 7));
 

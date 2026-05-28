@@ -9,8 +9,7 @@ import { computeAgentAnalytics, mean } from "@/lib/analytics";
 
 export const dynamic = "force-dynamic";
 
-// Response time correlated with performance (lower = better)
-const agentResponseTimes: Record<string, number> = {};
+
 // Satisfaction correlated inversely with cancellation rate
 function estimateResponseTime(cancellationRate: number): number {
   // Low cancel → fast response (10-15min), high cancel → slow (25-30min)

@@ -10,14 +10,11 @@ import {
   computeMonthlyTrends,
   computeDestinationAnalytics,
   computeAgentAnalytics,
-  computeRegionalAnalytics,
   computeSourceAnalytics,
   computeDayOfWeekAnalytics,
   comparePeriods,
-  groupBy,
   sum,
   mean,
-  stdDev,
   growthRate,
 } from "./analytics";
 
@@ -46,7 +43,6 @@ export function generateInsights(bookings: Booking[]): OperationalInsight[] {
   const monthly = computeMonthlyTrends(bookings);
   const destinations = computeDestinationAnalytics(bookings);
   const agents = computeAgentAnalytics(bookings);
-  const regions = computeRegionalAnalytics(bookings);
   const sources = computeSourceAnalytics(bookings);
   const dayOfWeek = computeDayOfWeekAnalytics(bookings);
 

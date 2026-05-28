@@ -54,7 +54,6 @@ const FIELD_ALIASES: Record<keyof Booking, string[]> = {
 
 // Required fields for a functional analytics pipeline
 const REQUIRED_FIELDS: (keyof Booking)[] = ["amount", "bookingDate", "status"];
-const IMPORTANT_FIELDS: (keyof Booking)[] = ["destination", "agentName", "customerName"];
 
 // --- Column Type Detection ---
 

@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from "react";
 import { useWorkspace } from "@/context/workspace-context";
 import { WorkspaceActions } from "@/components/workspace-actions";
-import { generateInsights, type OperationalInsight } from "@/lib/insight-engine";
+import { generateInsights } from "@/lib/insight-engine";
 import { formatCurrency, cn, timeAgo } from "@/lib/utils";
 
 type SeverityFilter = "all" | "critical" | "warning" | "positive" | "info";
@@ -30,7 +30,7 @@ export default function InsightsPage() {
       metric: ins.metric,
       metricValue: ins.metricValue,
       source: ins.source,
-      timestamp: ins.timestamp || new Date(Date.now() - i * 3600000).toISOString(),
+      timestamp: ins.timestamp || new Date(2024, 0, 1, 12 - i).toISOString(),
       isNew: i < 3,
     }));
   }, [dataset]);

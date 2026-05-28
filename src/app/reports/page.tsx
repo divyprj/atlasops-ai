@@ -11,8 +11,8 @@ import { WorkspaceActions } from "@/components/workspace-actions";
 import { computeBookingAnalytics, computeMonthlyTrends, computeDestinationAnalytics, computeAgentAnalytics, detectAnomalies } from "@/lib/analytics";
 import { computeOperationalScorecard } from "@/lib/kpi-engine";
 import { generateInsights } from "@/lib/insight-engine";
-import { formatCurrency, cn, timeAgo } from "@/lib/utils";
-import { exportToCSV, generateExecutiveSummaryText } from "@/lib/exports";
+import { formatCurrency, timeAgo } from "@/lib/utils";
+import { exportToCSV } from "@/lib/exports";
 import { Download, CheckCircle, FileText, BarChart3, AlertTriangle, TrendingUp } from "lucide-react";
 
 interface GeneratedReport {

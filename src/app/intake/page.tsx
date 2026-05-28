@@ -5,7 +5,7 @@
 // Enterprise data onboarding + analytics initialization
 // ============================================================
 
-import React, { useState, useCallback, useRef } from "react";
+import React, { useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { useDropzone } from "react-dropzone";
 import { useWorkspace } from "@/context/workspace-context";
@@ -14,8 +14,8 @@ import { detectSchema, mapToBookings, type SchemaMapping, type ColumnMapping } f
 import { Booking } from "@/types";
 import { cn } from "@/lib/utils";
 import {
-  Upload, FileSpreadsheet, FileText, CheckCircle2, Circle,
-  AlertTriangle, ArrowRight, ChevronDown, RotateCcw, Database,
+  Upload, FileSpreadsheet, CheckCircle2, Circle,
+  AlertTriangle, ArrowRight, RotateCcw, Database,
 } from "lucide-react";
 
 // --- Types ---
