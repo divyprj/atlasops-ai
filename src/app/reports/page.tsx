@@ -287,9 +287,10 @@ export default function ReportsPage() {
                   <button
                     onClick={() => handleExport(r)}
                     disabled={exporting === r.id}
-                    className="text-muted-foreground hover:text-foreground transition-colors disabled:opacity-50"
+                    className="flex items-center gap-1 text-[10px] text-muted-foreground hover:text-foreground border border-border/60 hover:border-foreground/30 rounded px-2 py-1 transition-all disabled:opacity-50"
                   >
-                    <Download size={13} />
+                    <Download size={12} />
+                    <span>Export</span>
                   </button>
                 </div>
               </div>

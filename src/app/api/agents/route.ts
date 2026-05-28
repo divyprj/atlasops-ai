@@ -60,17 +60,25 @@ export async function GET() {
         responseTime,
         satisfaction,
         conversionRate,
-        tier: performanceScore >= 85 ? "elite" as const :
-              performanceScore >= 70 ? "strong" as const :
-              performanceScore >= 55 ? "average" as const :
-              "needs_improvement" as const,
+        tier: "pending" as "elite" | "strong" | "average" | "needs_improvement" | "pending", // assigned below
       };
     }).sort((a, b) => b.performanceScore - a.performanceScore);
 
+    // Adaptive percentile-based tiers
+    const total = agents.length;
+    agents.forEach((agent, index) => {
+      const percentile = total > 1 ? index / (total - 1) : 0;
+      (agent as { tier: string }).tier =
+        percentile <= 0.10 ? "elite" :
+        percentile <= 0.35 ? "strong" :
+        percentile <= 0.65 ? "average" :
+        "needs_improvement";
+    });
+
     // Summary
     const activeAgents = agents.length;
-    const eliteCount = agents.filter(a => a.performanceScore >= 85).length;
-    const needsImprovementCount = agents.filter(a => a.performanceScore < 55).length;
+    const eliteCount = agents.filter(a => a.tier === "elite").length;
+    const needsImprovementCount = agents.filter(a => a.tier === "needs_improvement").length;
     const avgConversion = agents.length > 0
       ? +(agents.reduce((s, a) => s + a.conversionRate, 0) / agents.length).toFixed(1)
       : 0;

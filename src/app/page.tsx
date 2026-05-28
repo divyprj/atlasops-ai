@@ -153,9 +153,9 @@ function Dashboard({ bookings }: { bookings: import("@/types").Booking[] }) {
               "atlasops-destinations",
               [{ key: "destination", header: "Destination" }, { key: "revenue", header: "Revenue" }, { key: "bookings", header: "Bookings" }, { key: "cancelRate", header: "Cancel %" }, { key: "margin", header: "Margin %" }]
             )}
-            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-[10px] text-muted-foreground hover:text-foreground border border-border hover:bg-accent/30 transition-colors"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-[11px] text-muted-foreground hover:text-foreground border border-border/80 hover:border-foreground/30 hover:bg-accent/40 transition-all"
           >
-            <Download size={10} /> CSV
+            <Download size={12} /> Export CSV
           </button>
           <button
             onClick={() => {
@@ -176,9 +176,9 @@ function Dashboard({ bookings }: { bookings: import("@/types").Booking[] }) {
               const a = document.createElement("a"); a.href = url; a.download = "executive-summary.txt";
               a.click(); URL.revokeObjectURL(url);
             }}
-            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-[10px] text-muted-foreground hover:text-foreground border border-border hover:bg-accent/30 transition-colors"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-[11px] text-muted-foreground hover:text-foreground border border-border/80 hover:border-foreground/30 hover:bg-accent/40 transition-all"
           >
-            <Download size={10} /> Report
+            <Download size={12} /> Report
           </button>
         </div>
       </div>
@@ -186,7 +186,7 @@ function Dashboard({ bookings }: { bookings: import("@/types").Booking[] }) {
       {/* KPIs */}
       <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-7 gap-2.5">
         <KPICard title="Revenue" value={scorecard.revenue.value} format="currency" change={+scorecard.revenue.changePercent.toFixed(1)} subtitle="vs prev" />
-        <KPICard title="Bookings" value={scorecard.bookingVolume.value} format="number" change={+scorecard.bookingVolume.changePercent.toFixed(1)} subtitle="vs prev" />
+        <KPICard title="Active Bookings" value={scorecard.bookingVolume.value} format="number" change={+scorecard.bookingVolume.changePercent.toFixed(1)} subtitle="vs prev" />
         <KPICard title="Cancel Rate" value={scorecard.cancellationRate.value} format="percentage" change={scorecard.cancellationRate.change} />
         <KPICard title="Profit Margin" value={scorecard.profitMargin.value} format="percentage" change={scorecard.profitMargin.change} />
         <KPICard title="Avg Order" value={scorecard.avgOrderValue.value} format="currency" change={+scorecard.avgOrderValue.changePercent.toFixed(1)} />

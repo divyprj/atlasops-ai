@@ -127,10 +127,17 @@ export function generateInsights(bookings: Booking[]): OperationalInsight[] {
   // Top performer
   const topAgent = agents[0];
   if (topAgent) {
+    const rate = topAgent.completionRate;
+    const severity = rate >= 75 ? "positive" as const : rate >= 40 ? "info" as const : "warning" as const;
+    const framing = rate >= 75
+      ? `${topAgent.agentName} leads with ${rate.toFixed(1)}% completion rate`
+      : rate >= 40
+      ? `${topAgent.agentName} tops agent ranking with moderate ${rate.toFixed(1)}% completion`
+      : `${topAgent.agentName} leads agents but completion rate is low at ${rate.toFixed(1)}%`;
     insights.push({
-      id: `INS-${++id}`, severity: "positive", category: "agents",
-      title: `${topAgent.agentName} leads with ${topAgent.completionRate.toFixed(1)}% completion rate`,
-      detail: `Highest revenue efficiency at ₹${(topAgent.totalRevenue / 100000).toFixed(0)}L across ${topAgent.totalBookings} bookings. Cancellation rate at ${topAgent.cancellationRate}% — significantly below team average.`,
+      id: `INS-${++id}`, severity, category: "agents",
+      title: framing,
+      detail: `Highest revenue efficiency at ₹${(topAgent.totalRevenue / 100000).toFixed(0)}L across ${topAgent.totalBookings} bookings. Cancellation rate at ${topAgent.cancellationRate}% — ${topAgent.cancellationRate <= 10 ? "below" : "near"} team average.`,
       metric: "Agent Revenue", metricValue: topAgent.totalRevenue,
       source: "Agent Analytics", timestamp: ts,
     });

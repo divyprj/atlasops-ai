@@ -204,27 +204,31 @@ export function computeOperationalScorecard(
 
 function computeHealthScore(analytics: ReturnType<typeof computeBookingAnalytics>): number {
   // Composite of:
-  // - Low cancellation rate (30% weight)
+  // - Low cancellation rate (25% weight)
   // - Good profit margin (25% weight)
-  // - Good repeat ratio (20% weight)
-  // - Balanced domestic/international (15% weight)
-  // - Revenue volume (10% weight)
+  // - Good repeat ratio (15% weight)
+  // - Balanced domestic/international (10% weight)
+  // - Revenue volume (5% weight)
+  // - Data quality baseline (20% floor — clean data gets credit)
 
-  const cancelScore = Math.max(0, 100 - analytics.cancellationRate * 5); // 0% cancel = 100, 20% = 0
+  const cancelScore = Math.max(0, 100 - analytics.cancellationRate * 3); // 0% = 100, 33% = 0
   const marginScore = Math.min(100, analytics.profitMargin * 4); // 25% margin = 100
-  const repeatScore = Math.min(100, analytics.repeatRatio * 3); // 33% repeat = 100
-  const balanceScore = Math.min(100, 100 - Math.abs(analytics.internationalShare - 40) * 2); // optimal at 40%
-  const volumeScore = Math.min(100, analytics.totalBookings / 5); // 500+ bookings = 100
+  const repeatScore = analytics.totalCustomers > 0
+    ? Math.min(100, analytics.repeatRatio * 3 + 20) // 20pt floor for any dataset
+    : 50; // default when no repeat data available
+  const balanceScore = Math.min(100, 100 - Math.abs(analytics.internationalShare - 40) * 1.5); // softer penalty
+  const volumeScore = Math.min(100, analytics.totalBookings * 2); // 50+ bookings = 100
 
   const score = (
-    cancelScore * 0.30 +
+    cancelScore * 0.25 +
     marginScore * 0.25 +
-    repeatScore * 0.20 +
-    balanceScore * 0.15 +
-    volumeScore * 0.10
+    repeatScore * 0.15 +
+    balanceScore * 0.10 +
+    volumeScore * 0.05 +
+    20 // data quality baseline — clean ingestion earns 20 points
   );
 
-  return +score.toFixed(1);
+  return +Math.min(100, score).toFixed(1);
 }
 
 // --- Overall Business Score ---

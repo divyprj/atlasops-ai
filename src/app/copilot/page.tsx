@@ -500,11 +500,11 @@ export default function CopilotPage() {
           </div>
           <div className="space-y-1">
             {[
-              { name: "KPI Engine", status: "active" },
-              { name: "Anomaly Engine", status: "active" },
-              { name: "Forecast Engine", status: "active" },
-              { name: "Insight Engine", status: "active" },
-              { name: "Groq LLM", status: process.env.NEXT_PUBLIC_GROQ_CONFIGURED === "true" ? "active" : "local" },
+              { name: "KPI Engine", status: "active", detail: "" },
+              { name: "Anomaly Engine", status: "active", detail: "" },
+              { name: "Forecast Engine", status: "active", detail: "" },
+              { name: "Insight Engine", status: "active", detail: "" },
+              { name: "Groq LLM", status: process.env.NEXT_PUBLIC_GROQ_CONFIGURED === "true" ? "active" : "local", detail: process.env.NEXT_PUBLIC_GROQ_CONFIGURED === "true" ? "" : "awaiting credentials" },
             ].map((s) => (
               <div key={s.name} className="flex items-center gap-1.5">
                 <span className={cn(
@@ -512,6 +512,7 @@ export default function CopilotPage() {
                   s.status === "active" ? "bg-emerald-500" : "bg-amber-500"
                 )} />
                 <span className="text-[9px] text-muted-foreground font-mono">{s.name}</span>
+                {s.detail && <span className="text-[8px] text-amber-400/70 font-mono">· {s.detail}</span>}
               </div>
             ))}
           </div>

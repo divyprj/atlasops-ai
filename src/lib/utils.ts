@@ -30,6 +30,8 @@ export function formatNumber(num: number, compact = false): string {
 
 // Percentage formatter
 export function formatPercent(value: number): string {
+  if (value > 999) return ">+999%";
+  if (value < -999) return "<-999%";
   return `${value >= 0 ? "+" : ""}${value.toFixed(1)}%`;
 }
 

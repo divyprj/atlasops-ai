@@ -327,10 +327,11 @@ function toDateString(v: unknown): string {
 
 function normalizeStatus(v: unknown): Booking["status"] {
   const s = String(v || "").toLowerCase().trim();
-  if (s.includes("cancel") || s === "refund" || s === "refunded") return "cancelled";
+  if (s === "cancelled" || s === "canceled" || s === "cancel") return "cancelled";
   if (s.includes("complet") || s === "done" || s === "fulfilled" || s === "delivered") return "completed";
   if (s.includes("confirm") || s === "active" || s === "approved" || s === "booked") return "confirmed";
   if (s.includes("pend") || s === "processing" || s === "hold" || s === "waiting") return "pending";
+  if (s.includes("refund")) return "cancelled"; // Only after all other checks
   // Default based on common patterns
   return "confirmed";
 }
