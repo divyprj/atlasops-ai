@@ -11,6 +11,7 @@ import { WorkspaceActions } from "@/components/workspace-actions";
 import { computeBookingAnalytics, computeAgentAnalytics, computeDestinationAnalytics, detectAnomalies, computeMonthlyTrends } from "@/lib/analytics";
 import { generateInsights } from "@/lib/insight-engine";
 import { formatCurrency, cn } from "@/lib/utils";
+import { useRuntimeHealth } from "@/hooks/use-runtime-health";
 import { Send, Terminal, Activity, AlertTriangle, Database, Clock, Zap } from "lucide-react";
 
 // --- Types ---
@@ -48,6 +49,7 @@ export default function CopilotPage() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const runtime = useRuntimeHealth();
   const inputRef = useRef<HTMLInputElement>(null);
   const [history, setHistory] = useState<Array<{ role: string; content: string }>>([]);
 
@@ -313,8 +315,15 @@ export default function CopilotPage() {
           <div className="flex items-center gap-2">
             <Terminal size={12} className="text-muted-foreground" />
             <span className="text-[11px] font-medium">Operations Intelligence</span>
-            <span className="text-[9px] px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-              LIVE
+            <span className={cn(
+              "text-[9px] px-1.5 py-0.5 rounded border font-mono",
+              runtime.mode === "live"
+                ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
+                : runtime.mode === "degraded"
+                  ? "bg-amber-500/10 text-amber-400 border-amber-500/20"
+                  : "bg-zinc-500/10 text-zinc-400 border-zinc-500/20"
+            )}>
+              {runtime.mode === "live" ? "LIVE · Groq Runtime" : runtime.mode === "degraded" ? "DEGRADED" : "DETERMINISTIC"}
             </span>
           </div>
           <span className="text-[9px] text-muted-foreground font-mono">{metadata.fileName}</span>

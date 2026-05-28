@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { useWorkspace } from "@/context/workspace-context";
+import { useRuntimeHealth } from "@/hooks/use-runtime-health";
 import {
   LayoutDashboard,
   TrendingUp,
@@ -61,6 +62,7 @@ export function Sidebar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const { isReady, metadata, reset } = useWorkspace();
+  const runtime = useRuntimeHealth();
 
   const nav = (
     <>
@@ -127,7 +129,15 @@ export function Sidebar() {
               <span>6 engines</span>
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-[9px] text-muted-foreground/50">Groq · llama-3.3-70b</span>
+              <span className="flex items-center gap-1.5">
+                <span className={cn(
+                  "w-[5px] h-[5px] rounded-full shrink-0",
+                  runtime.mode === "live" ? "bg-emerald-500" : runtime.mode === "degraded" ? "bg-amber-500" : "bg-zinc-500"
+                )} />
+                <span className="text-[9px] text-muted-foreground/50 font-mono">
+                  {runtime.mode === "live" ? `Groq · ${runtime.model}` : runtime.mode === "degraded" ? "Groq · degraded" : "LLM standby"}
+                </span>
+              </span>
               <button
                 onClick={reset}
                 className="text-[9px] text-muted-foreground hover:text-foreground transition-colors"
@@ -142,7 +152,7 @@ export function Sidebar() {
               <div className="w-1.5 h-1.5 rounded-full bg-amber-400/50" />
               <span className="text-[10px] text-muted-foreground">No dataset loaded</span>
             </div>
-            <span className="text-[9px] text-muted-foreground/40 block pl-3.5">0 engines · LLM idle</span>
+            <span className="text-[9px] text-muted-foreground/40 block pl-3.5">0 engines · LLM standby</span>
           </div>
         )}
       </div>

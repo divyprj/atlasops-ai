@@ -247,3 +247,27 @@ button {
   background-color: rgba(74, 144, 226, 0.25);
   color: #F5F7FA;
 }
+
+/* ============================================================
+   Runtime Intelligence Indicators
+   Infrastructure-grade status system
+   ============================================================ */
+
+.runtime-online {
+  color: #4ADE80;
+}
+
+.runtime-standby {
+  color: #F59E0B;
+}
+
+.runtime-degraded {
+  color: #EF4444;
+}
+
+.runtime-mono {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}

@@ -9,6 +9,7 @@ import React from "react";
 import { ChevronRight, Database, AlertTriangle, RotateCcw } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 import { useWorkspace } from "@/context/workspace-context";
+import { useRuntimeHealth } from "@/hooks/use-runtime-health";
 import { timeAgo, cn } from "@/lib/utils";
 
 const routeLabels: Record<string, string> = {
@@ -29,6 +30,7 @@ export function Header() {
   const pathname = usePathname();
   const router = useRouter();
   const { metadata, isReady, reset } = useWorkspace();
+  const runtime = useRuntimeHealth();
   const pageTitle = routeLabels[pathname] || "AtlasOps";
 
   return (
@@ -70,6 +72,16 @@ export function Header() {
             )}
             <span className="text-[10px] text-muted-foreground/30">|</span>
             <span className="text-[10px] font-mono text-muted-foreground hidden md:inline">6 engines active</span>
+            <span className="text-[10px] text-muted-foreground/30 hidden md:inline">|</span>
+            <span className="hidden md:inline-flex items-center gap-1">
+              <span className={cn(
+                "w-[5px] h-[5px] rounded-full shrink-0",
+                runtime.mode === "live" ? "bg-emerald-500" : runtime.mode === "degraded" ? "bg-amber-500" : "bg-zinc-500"
+              )} />
+              <span className="runtime-mono text-muted-foreground">
+                {runtime.mode === "live" ? `Groq · ${runtime.latency}ms` : runtime.mode === "degraded" ? "Runtime degraded" : "Deterministic"}
+              </span>
+            </span>
             <span className="text-[10px] text-muted-foreground/30 hidden md:inline">|</span>
             <span className="text-[9px] text-muted-foreground/50 hidden md:inline">
               {timeAgo(metadata.uploadedAt)}
