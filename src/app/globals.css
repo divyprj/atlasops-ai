@@ -1,45 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
 
+/* ============================================================
+   AtlasOps AI — Design System Tokens
+   Enterprise Operational Intelligence Infrastructure
+   
+   Palette:
+   Deep Graphite    #1A1D21  → background, cards
+   Midnight Blue    #121E3A  → sidebar, elevated surfaces
+   Operational Blue #4A90E2  → primary, interactive
+   Soft Silver      #B8BDC7  → muted text, borders
+   Off White        #F5F7FA  → foreground text
+   ============================================================ */
+
 @theme inline {
-  --color-background: oklch(0.10 0.00 0);
-  --color-foreground: oklch(0.95 0.00 0);
-  --color-card: oklch(0.13 0.005 260);
-  --color-card-foreground: oklch(0.95 0.00 0);
-  --color-popover: oklch(0.13 0.005 260);
-  --color-popover-foreground: oklch(0.95 0.00 0);
-  --color-primary: oklch(0.62 0.15 250);
-  --color-primary-foreground: oklch(0.98 0.00 0);
-  --color-secondary: oklch(0.18 0.005 260);
-  --color-secondary-foreground: oklch(0.95 0.00 0);
-  --color-muted: oklch(0.18 0.005 260);
-  --color-muted-foreground: oklch(0.55 0.01 260);
-  --color-accent: oklch(0.18 0.01 260);
-  --color-accent-foreground: oklch(0.95 0.00 0);
-  --color-destructive: oklch(0.55 0.20 27);
-  --color-destructive-foreground: oklch(0.98 0.00 0);
-  --color-border: oklch(0.20 0.005 260);
-  --color-input: oklch(0.20 0.005 260);
-  --color-ring: oklch(0.62 0.15 250);
-  --color-chart-1: oklch(0.62 0.15 250);
-  --color-chart-2: oklch(0.65 0.15 160);
-  --color-chart-3: oklch(0.70 0.12 75);
-  --color-chart-4: oklch(0.60 0.15 300);
-  --color-chart-5: oklch(0.65 0.12 200);
-  --color-sidebar: oklch(0.11 0.005 260);
-  --color-sidebar-foreground: oklch(0.95 0.00 0);
-  --color-sidebar-primary: oklch(0.62 0.15 250);
-  --color-sidebar-primary-foreground: oklch(0.98 0.00 0);
-  --color-sidebar-accent: oklch(0.18 0.01 260);
-  --color-sidebar-accent-foreground: oklch(0.95 0.00 0);
-  --color-sidebar-border: oklch(0.20 0.005 260);
-  --color-sidebar-ring: oklch(0.62 0.15 250);
-  --radius: 0.5rem;
+  /* === Surface Colors === */
+  --color-background: #1A1D21;
+  --color-foreground: #F5F7FA;
+  --color-card: #1E2127;
+  --color-card-foreground: #F5F7FA;
+  --color-popover: #1E2127;
+  --color-popover-foreground: #F5F7FA;
+
+  /* === Interactive Colors === */
+  --color-primary: #4A90E2;
+  --color-primary-foreground: #F5F7FA;
+  --color-secondary: #252930;
+  --color-secondary-foreground: #F5F7FA;
+
+  /* === Muted & Accent === */
+  --color-muted: #252930;
+  --color-muted-foreground: #8A9099;
+  --color-accent: #252930;
+  --color-accent-foreground: #F5F7FA;
+
+  /* === Status Colors === */
+  --color-destructive: #C74B4B;
+  --color-destructive-foreground: #F5F7FA;
+
+  /* === Structural === */
+  --color-border: #2A2E35;
+  --color-input: #2A2E35;
+  --color-ring: #4A90E2;
+
+  /* === Chart Palette (restrained, analytical) === */
+  --color-chart-1: #4A90E2;
+  --color-chart-2: #5BAD6E;
+  --color-chart-3: #D4A843;
+  --color-chart-4: #8B7FD4;
+  --color-chart-5: #4ABFCF;
+
+  /* === Sidebar === */
+  --color-sidebar: #121E3A;
+  --color-sidebar-foreground: #F5F7FA;
+  --color-sidebar-primary: #4A90E2;
+  --color-sidebar-primary-foreground: #F5F7FA;
+  --color-sidebar-accent: #1A2B4D;
+  --color-sidebar-accent-foreground: #F5F7FA;
+  --color-sidebar-border: #1E2E52;
+  --color-sidebar-ring: #4A90E2;
+
+  /* === System === */
+  --radius: 0.375rem;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono: 'Geist Mono', 'SF Mono', 'Menlo', monospace;
+  --font-mono: 'IBM Plex Mono', 'SF Mono', 'Menlo', monospace;
 }
+
+/* ============================================================
+   Global Reset & Base Styles
+   ============================================================ */
 
 *,
 ::after,
@@ -51,14 +82,168 @@
 
 body {
   font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-background);
   color: var(--color-foreground);
 }
 
-/* Scrollbar — minimal, professional */
-::-webkit-scrollbar { width: 6px; height: 6px; }
+/* ============================================================
+   Scrollbar — Minimal, infrastructure-grade
+   ============================================================ */
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: oklch(0.25 0.005 260); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: oklch(0.30 0.005 260); }
+::-webkit-scrollbar-thumb { background: #2A2E35; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3A3E45; }
+
+/* ============================================================
+   Operational Table System
+   Dense, analytical, enterprise-grade
+   ============================================================ */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #8A9099;
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+td {
+  font-size: 12px;
+  padding: 7px 12px;
+  border-bottom: 1px solid var(--color-border);
+  color: #B8BDC7;
+}
+
+tr:hover td {
+  background-color: #252930;
+}
+
+/* Mono values in tables */
+td[data-type="number"],
+td[data-type="runtime"],
+.font-mono {
+  font-family: var(--font-mono) !important;
+}
+
+/* ============================================================
+   Card System — Operational panels
+   ============================================================ */
+
+.card,
+[class*="rounded"][class*="border"][class*="bg-card"] {
+  border-radius: var(--radius);
+}
+
+/* ============================================================
+   Runtime Indicators
+   Infrastructure-grade status dots
+   ============================================================ */
+
+.runtime-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.runtime-dot--active { background-color: #5BAD6E; }
+.runtime-dot--warning { background-color: #D4A843; }
+.runtime-dot--critical { background-color: #C74B4B; }
+.runtime-dot--idle { background-color: #4A4E55; }
+
+/* ============================================================
+   Status Badge System
+   ============================================================ */
+
+.status-critical { color: #C74B4B; }
+.status-warning { color: #D4A843; }
+.status-positive { color: #5BAD6E; }
+.status-info { color: #4A90E2; }
+
+/* ============================================================
+   KPI Metric Cards
+   Dense, mono values, analytical hierarchy
+   ============================================================ */
+
+.kpi-value {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.kpi-label {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #8A9099;
+}
+
+.kpi-delta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+/* ============================================================
+   Upload / Dropzone
+   Intelligent, analytical feel
+   ============================================================ */
+
+.dropzone {
+  border: 1.5px dashed #2A2E35;
+  border-radius: var(--radius);
+  padding: 32px;
+  text-align: center;
+  transition: border-color 0.15s, background-color 0.15s;
+  cursor: pointer;
+}
+
+.dropzone:hover,
+.dropzone--active {
+  border-color: #4A90E2;
+  background-color: rgba(74, 144, 226, 0.04);
+}
+
+/* ============================================================
+   Button Refinement
+   ============================================================ */
+
+button {
+  transition: all 0.12s ease;
+}
+
+/* ============================================================
+   Focus & Accessibility
+   ============================================================ */
+
+:focus-visible {
+  outline: 1.5px solid #4A90E2;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ============================================================
+   Selection
+   ============================================================ */
+
+::selection {
+  background-color: rgba(74, 144, 226, 0.25);
+  color: #F5F7FA;
+}

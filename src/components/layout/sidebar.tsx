@@ -35,7 +35,7 @@ const navSections = [
   {
     label: "Intelligence",
     items: [
-      { label: "AI Insights", href: "/insights", icon: Brain },
+      { label: "Insights", href: "/insights", icon: Brain },
       { label: "Entities", href: "/agents", icon: Users },
       { label: "Forecasting", href: "/forecasting", icon: LineChart },
     ],
