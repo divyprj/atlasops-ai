@@ -46,7 +46,7 @@ export default function HealthPage() {
     ].filter(f => f.populated > 0);
 
     // Overall metrics
-    const totalCells = fields.reduce((s, _f) => s + n, 0);
+    const totalCells = fields.reduce((s) => s + n, 0);
     const filledCells = fields.reduce((s, f) => s + f.populated, 0);
     const overallFillRate = Math.round((filledCells / totalCells) * 100);
 

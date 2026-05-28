@@ -1,0 +1,121 @@
+order_id,customer_name,customer_email,product_category,product_name,quantity,unit_price,amount,discount,profit,status,payment_method,shipping_region,city,order_date,ship_date,delivery_date,source
+EC-10001,Anika Verma,anika.v@gmail.com,Electronics,Wireless Earbuds Pro,2,3499,6998,0,1749,delivered,upi,North,Delhi,2025-01-02,2025-01-03,2025-01-06,organic
+EC-10002,Rohan Kapoor,rohan.k@outlook.com,Fashion,Premium Denim Jacket,1,4299,4299,430,1075,delivered,credit_card,West,Mumbai,2025-01-03,2025-01-04,2025-01-08,paid_ads
+EC-10003,Sneha Pillai,sneha.p@gmail.com,Home & Kitchen,Air Fryer 6.5L,1,7899,7899,0,2370,delivered,debit_card,South,Bangalore,2025-01-04,2025-01-05,2025-01-09,organic
+EC-10004,Vikram Mehta,vikram.m@yahoo.com,Electronics,Smart Watch Series 5,1,12999,12999,1300,2600,returned,credit_card,West,Pune,2025-01-05,2025-01-06,2025-01-09,referral
+EC-10005,Priya Nair,priya.n@gmail.com,Beauty,Vitamin C Serum Bundle,3,1299,3897,0,1559,delivered,upi,South,Chennai,2025-01-06,2025-01-07,2025-01-10,social
+EC-10006,Amit Sharma,amit.s@company.co.in,Electronics,Bluetooth Speaker 40W,1,5499,5499,550,1100,delivered,credit_card,North,Jaipur,2025-01-07,2025-01-08,2025-01-12,organic
+EC-10007,Kavitha Reddy,kavitha.r@gmail.com,Fashion,Running Shoes Ultra,1,6799,6799,0,2040,cancelled,upi,South,Hyderabad,2025-01-08,,,organic
+EC-10008,Deepak Joshi,deepak.j@hotmail.com,Home & Kitchen,Robot Vacuum Cleaner,1,18999,18999,1900,3800,delivered,emi,North,Lucknow,2025-01-09,2025-01-10,2025-01-14,paid_ads
+EC-10009,Meera Iyer,meera.i@gmail.com,Books,Tech Leadership Collection,4,899,3596,360,1438,delivered,upi,South,Bangalore,2025-01-10,2025-01-11,2025-01-14,organic
+EC-10010,Sanjay Tiwari,sanjay.t@outlook.com,Electronics,Noise Cancelling Headphones,1,8999,8999,0,2700,delivered,credit_card,East,Kolkata,2025-01-12,2025-01-13,2025-01-16,referral
+EC-10011,Lakshmi Rao,lakshmi.r@gmail.com,Fashion,Silk Saree Collection,1,5499,5499,0,2200,delivered,upi,South,Chennai,2025-01-13,2025-01-14,2025-01-18,social
+EC-10012,Nikhil Gupta,nikhil.g@yahoo.com,Electronics,Mechanical Keyboard RGB,1,4599,4599,460,920,returned,debit_card,North,Delhi,2025-01-14,2025-01-15,2025-01-18,organic
+EC-10013,Ananya Shah,ananya.s@gmail.com,Beauty,Korean Skincare Set,1,3299,3299,0,1320,delivered,credit_card,West,Mumbai,2025-01-15,2025-01-16,2025-01-19,paid_ads
+EC-10014,Rajesh Kumar,rajesh.k@company.co.in,Home & Kitchen,Espresso Machine,1,24999,24999,2500,5000,delivered,emi,North,Chandigarh,2025-01-17,2025-01-18,2025-01-22,organic
+EC-10015,Shweta Pandey,shweta.p@gmail.com,Fashion,Winter Coat Premium,1,7999,7999,800,1600,cancelled,credit_card,North,Delhi,2025-01-18,,,referral
+EC-10016,Tarun Malhotra,tarun.m@hotmail.com,Electronics,Tablet 11-inch 128GB,1,32999,32999,3300,6600,delivered,emi,West,Ahmedabad,2025-01-20,2025-01-21,2025-01-25,organic
+EC-10017,Ritu Sharma,ritu.s@gmail.com,Books,Fiction Bestseller Bundle,5,599,2995,300,1198,delivered,upi,North,Jaipur,2025-01-21,2025-01-22,2025-01-25,social
+EC-10018,Gaurav Saxena,gaurav.s@outlook.com,Home & Kitchen,Smart Blender Pro,1,6499,6499,0,1950,delivered,debit_card,West,Pune,2025-01-22,2025-01-23,2025-01-27,organic
+EC-10019,Ishita Banerjee,ishita.b@gmail.com,Beauty,Hair Care Premium Kit,1,2499,2499,250,750,returned,upi,East,Kolkata,2025-01-23,2025-01-24,2025-01-27,paid_ads
+EC-10020,Pankaj Verma,pankaj.v@yahoo.com,Electronics,Webcam 4K Streaming,1,5999,5999,0,1800,delivered,credit_card,North,Delhi,2025-01-25,2025-01-26,2025-01-29,organic
+EC-10021,Nandini Bhat,nandini.b@gmail.com,Fashion,Leather Handbag Italian,1,8999,8999,900,2700,delivered,credit_card,South,Bangalore,2025-01-27,2025-01-28,2025-02-01,referral
+EC-10022,Vivek Pillai,vivek.p@company.co.in,Electronics,Gaming Mouse Wireless,2,2999,5998,0,1800,delivered,upi,South,Kochi,2025-01-28,2025-01-29,2025-02-02,organic
+EC-10023,Aparna Das,aparna.d@gmail.com,Home & Kitchen,Water Purifier RO,1,15999,15999,1600,3200,delivered,emi,East,Kolkata,2025-01-30,2025-01-31,2025-02-04,paid_ads
+EC-10024,Kiran Singh,kiran.s@hotmail.com,Beauty,Fragrance Gift Set,1,4299,4299,430,1290,cancelled,debit_card,North,Lucknow,2025-02-01,,,social
+EC-10025,Suresh Nair,suresh.n@gmail.com,Electronics,Portable SSD 1TB,1,6999,6999,700,1400,delivered,credit_card,South,Chennai,2025-02-02,2025-02-03,2025-02-06,organic
+EC-10026,Bhavna Patel,bhavna.p@outlook.com,Fashion,Ethnic Kurta Set,2,2499,4998,500,1500,delivered,upi,West,Surat,2025-02-04,2025-02-05,2025-02-09,organic
+EC-10027,Manish Chopra,manish.c@gmail.com,Home & Kitchen,Air Purifier HEPA,1,12999,12999,0,3900,delivered,emi,North,Delhi,2025-02-05,2025-02-06,2025-02-10,referral
+EC-10028,Divya Krishnan,divya.k@yahoo.com,Electronics,Wireless Charger Stand,3,1899,5697,570,1709,delivered,upi,South,Hyderabad,2025-02-07,2025-02-08,2025-02-11,paid_ads
+EC-10029,Ashwin Rao,ashwin.r@gmail.com,Books,Business Strategy Set,3,1299,3897,0,1559,returned,credit_card,South,Bangalore,2025-02-08,2025-02-09,2025-02-12,organic
+EC-10030,Rekha Iyer,rekha.i@company.co.in,Fashion,Formal Blazer Women,1,5999,5999,600,1200,delivered,credit_card,West,Mumbai,2025-02-10,2025-02-11,2025-02-14,social
+EC-10031,Hemant Verma,hemant.v@gmail.com,Electronics,Smart Home Hub,1,9999,9999,1000,2000,delivered,debit_card,North,Noida,2025-02-12,2025-02-13,2025-02-16,organic
+EC-10032,Sunita Kaur,sunita.k@hotmail.com,Beauty,Anti-Aging Cream Set,1,5499,5499,0,2200,delivered,upi,North,Amritsar,2025-02-13,2025-02-14,2025-02-18,referral
+EC-10033,Arun Menon,arun.m@gmail.com,Home & Kitchen,Induction Cooktop Dual,1,4999,4999,500,1000,cancelled,debit_card,South,Trivandrum,2025-02-15,,,organic
+EC-10034,Pallavi Deshmukh,pallavi.d@outlook.com,Electronics,Fitness Tracker Band,2,3499,6998,700,1400,delivered,upi,West,Nagpur,2025-02-17,2025-02-18,2025-02-21,paid_ads
+EC-10035,Gopal Saxena,gopal.s@gmail.com,Fashion,Sports Tracksuit,1,3299,3299,330,660,delivered,credit_card,North,Jaipur,2025-02-18,2025-02-19,2025-02-23,organic
+EC-10036,Jaya Pillai,jaya.p@yahoo.com,Books,Self-Help Bestsellers,6,499,2994,0,1198,delivered,upi,South,Chennai,2025-02-20,2025-02-21,2025-02-24,social
+EC-10037,Sachin Jha,sachin.j@gmail.com,Electronics,USB-C Docking Station,1,7499,7499,750,1500,returned,credit_card,East,Patna,2025-02-22,2025-02-23,2025-02-26,organic
+EC-10038,Smita Kulkarni,smita.k@company.co.in,Home & Kitchen,Stand Mixer Professional,1,11999,11999,1200,2400,delivered,emi,West,Pune,2025-02-24,2025-02-25,2025-03-01,referral
+EC-10039,Dev Chopra,dev.c@hotmail.com,Beauty,Men Grooming Premium,1,2999,2999,300,900,delivered,upi,North,Delhi,2025-02-25,2025-02-26,2025-03-01,organic
+EC-10040,Radha Krishna,radha.k@gmail.com,Electronics,Monitor 27-inch 4K,1,28999,28999,2900,5800,delivered,emi,South,Bangalore,2025-02-27,2025-02-28,2025-03-04,paid_ads
+EC-10041,Tushar Bhatt,tushar.b@gmail.com,Fashion,Casual Sneakers Premium,1,4999,4999,0,1500,delivered,credit_card,West,Mumbai,2025-03-01,2025-03-02,2025-03-06,organic
+EC-10042,Chitra Sharma,chitra.s@outlook.com,Home & Kitchen,Dishwasher Compact,1,22999,22999,2300,4600,delivered,emi,North,Delhi,2025-03-03,2025-03-04,2025-03-08,referral
+EC-10043,Mohan Kumar,mohan.k@gmail.com,Electronics,Power Bank 20000mAh,3,1999,5997,600,1799,delivered,upi,South,Hyderabad,2025-03-04,2025-03-05,2025-03-08,organic
+EC-10044,Geeta Nair,geeta.n@yahoo.com,Beauty,Luxury Lipstick Set,2,1899,3798,380,1139,cancelled,debit_card,South,Kochi,2025-03-06,,,social
+EC-10045,Naveen Reddy,naveen.r@gmail.com,Fashion,Formal Shoes Oxford,1,5999,5999,600,1200,delivered,credit_card,South,Chennai,2025-03-08,2025-03-09,2025-03-12,organic
+EC-10046,Usha Shankar,usha.s@company.co.in,Electronics,Laptop Stand Ergonomic,2,2499,4998,500,1500,delivered,upi,East,Kolkata,2025-03-10,2025-03-11,2025-03-14,paid_ads
+EC-10047,Ajay Tiwari,ajay.t@hotmail.com,Home & Kitchen,Coffee Grinder Burr,1,3999,3999,400,800,returned,debit_card,North,Lucknow,2025-03-12,2025-03-13,2025-03-16,organic
+EC-10048,Shruti Hegde,shruti.h@gmail.com,Books,Coding Interview Bundle,3,799,2397,0,959,delivered,upi,South,Bangalore,2025-03-13,2025-03-14,2025-03-17,referral
+EC-10049,Arjun Malhotra,arjun.m@outlook.com,Electronics,Drone Camera 4K,1,45999,45999,4600,9200,delivered,emi,North,Delhi,2025-03-15,2025-03-16,2025-03-20,organic
+EC-10050,Preeti Bhat,preeti.b@gmail.com,Fashion,Yoga Pants Premium,2,1999,3998,0,1599,delivered,upi,West,Pune,2025-03-17,2025-03-18,2025-03-21,social
+EC-10051,Vikas Agarwal,vikas.a@yahoo.com,Beauty,Sunscreen SPF50 Pack,4,799,3196,320,958,delivered,upi,North,Jaipur,2025-03-19,2025-03-20,2025-03-23,organic
+EC-10052,Manju Rao,manju.r@gmail.com,Electronics,External Hard Drive 4TB,1,8499,8499,850,1700,delivered,credit_card,South,Chennai,2025-03-21,2025-03-22,2025-03-25,paid_ads
+EC-10053,Pawan Kumar,pawan.k@company.co.in,Home & Kitchen,Pressure Cooker 8L,2,3499,6998,700,2100,delivered,debit_card,North,Delhi,2025-03-22,2025-03-23,2025-03-27,organic
+EC-10054,Aarti Desai,aarti.d@gmail.com,Fashion,Party Dress Designer,1,9999,9999,1000,2000,cancelled,credit_card,West,Mumbai,2025-03-24,,,referral
+EC-10055,Kishore Reddy,kishore.r@hotmail.com,Electronics,Smart Light Bulbs Kit,4,999,3996,0,1598,delivered,upi,South,Hyderabad,2025-03-26,2025-03-27,2025-03-30,organic
+EC-10056,Lata Desai,lata.d@gmail.com,Books,History Masterclass Set,2,1499,2998,300,899,delivered,credit_card,West,Ahmedabad,2025-03-28,2025-03-29,2025-04-01,social
+EC-10057,Ashok Nambiar,ashok.n@outlook.com,Home & Kitchen,Cast Iron Cookware Set,1,6999,6999,700,2100,delivered,debit_card,South,Kochi,2025-03-30,2025-03-31,2025-04-03,organic
+EC-10058,Ganesh Sharma,ganesh.s@gmail.com,Electronics,Wireless Earbuds Budget,3,1499,4497,450,1349,returned,upi,North,Jaipur,2025-04-01,2025-04-02,2025-04-05,paid_ads
+EC-10059,Savita Iyer,savita.i@yahoo.com,Beauty,Organic Face Wash Set,3,899,2697,270,809,delivered,upi,South,Bangalore,2025-04-03,2025-04-04,2025-04-07,organic
+EC-10060,Dinesh Gupta,dinesh.g@gmail.com,Fashion,Leather Wallet Premium,2,2499,4998,500,1500,delivered,credit_card,North,Delhi,2025-04-05,2025-04-06,2025-04-09,referral
+EC-10061,Shobha Nair,shobha.n@company.co.in,Electronics,Webcam Ring Light Combo,1,3999,3999,400,1200,delivered,debit_card,South,Chennai,2025-04-07,2025-04-08,2025-04-11,organic
+EC-10062,Varun Mehta,varun.m@hotmail.com,Home & Kitchen,Instant Pot Multi-Cook,1,8999,8999,900,1800,delivered,emi,West,Mumbai,2025-04-08,2025-04-09,2025-04-13,social
+EC-10063,Padma Krishna,padma.k@gmail.com,Books,Science Fiction Anthology,4,699,2796,0,1118,delivered,upi,South,Hyderabad,2025-04-10,2025-04-11,2025-04-14,organic
+EC-10064,Rajiv Nair,rajiv.n@outlook.com,Electronics,Noise Buds Active,2,2999,5998,600,1800,cancelled,credit_card,South,Trivandrum,2025-04-12,,,paid_ads
+EC-10065,Tanvi Agarwal,tanvi.a@gmail.com,Fashion,Denim Jeans Slim Fit,2,2799,5598,560,1120,delivered,upi,North,Noida,2025-04-14,2025-04-15,2025-04-18,organic
+EC-10066,Sunil Mehta,sunil.m@yahoo.com,Beauty,Beard Grooming Kit,1,1999,1999,200,600,delivered,upi,West,Pune,2025-04-15,2025-04-16,2025-04-19,referral
+EC-10067,Siddharth Menon,siddharth.m@gmail.com,Home & Kitchen,Toaster Oven Digital,1,5499,5499,550,1100,returned,debit_card,South,Bangalore,2025-04-17,2025-04-18,2025-04-21,organic
+EC-10068,Uma Shankar,uma.s@company.co.in,Electronics,Projector Mini Portable,1,15999,15999,1600,3200,delivered,emi,North,Delhi,2025-04-19,2025-04-20,2025-04-24,organic
+EC-10069,Anupama Iyer,anupama.i@gmail.com,Fashion,Athleisure Hoodie,2,2299,4598,460,920,delivered,credit_card,West,Mumbai,2025-04-21,2025-04-22,2025-04-25,social
+EC-10070,Harsh Vardhan,harsh.v@hotmail.com,Books,Philosophy Collection,3,999,2997,300,899,delivered,upi,North,Jaipur,2025-04-23,2025-04-24,2025-04-27,organic
+EC-10071,Prerna Joshi,prerna.j@gmail.com,Electronics,Smart Thermostat WiFi,1,7999,7999,800,1600,delivered,credit_card,North,Lucknow,2025-04-25,2025-04-26,2025-04-29,paid_ads
+EC-10072,Tara Menon,tara.m@outlook.com,Beauty,Hair Dryer Professional,1,4999,4999,500,1500,delivered,debit_card,South,Chennai,2025-04-27,2025-04-28,2025-05-01,referral
+EC-10073,Manoj Tiwari,manoj.t@gmail.com,Home & Kitchen,Knife Set Japanese,1,7999,7999,0,2400,cancelled,credit_card,East,Kolkata,2025-04-28,,,organic
+EC-10074,Jyoti Menon,jyoti.m@yahoo.com,Electronics,Action Camera 5K,1,22999,22999,2300,4600,delivered,emi,South,Kochi,2025-04-30,2025-05-01,2025-05-05,organic
+EC-10075,Anand Verma,anand.v@gmail.com,Fashion,Travel Backpack Pro,1,3999,3999,400,1200,delivered,upi,North,Delhi,2025-05-02,2025-05-03,2025-05-06,social
+EC-10076,Rohit Singh,rohit.s@company.co.in,Books,Data Science Handbook,2,1599,3198,0,1279,delivered,credit_card,East,Ranchi,2025-05-04,2025-05-05,2025-05-08,organic
+EC-10077,Megha Kulkarni,megha.k@hotmail.com,Electronics,Streaming Stick 4K,2,3999,7998,800,2400,delivered,upi,West,Pune,2025-05-05,2025-05-06,2025-05-09,paid_ads
+EC-10078,Santosh Kumar,santosh.k@gmail.com,Home & Kitchen,Smart Scale Body Comp,2,2999,5998,600,1800,returned,debit_card,South,Bangalore,2025-05-07,2025-05-08,2025-05-11,organic
+EC-10079,Deepa Menon,deepa.m@outlook.com,Beauty,Makeup Brush Set Pro,1,2499,2499,250,750,delivered,upi,South,Hyderabad,2025-05-09,2025-05-10,2025-05-13,referral
+EC-10080,Aditya Bhatt,aditya.b@gmail.com,Fashion,Polo Shirts Pack of 3,1,3499,3499,350,1050,delivered,credit_card,West,Mumbai,2025-05-11,2025-05-12,2025-05-15,organic
+EC-10081,Ranjana Singh,ranjana.s@yahoo.com,Electronics,Webcam 1080p HD,1,2999,2999,300,900,delivered,upi,North,Noida,2025-05-12,2025-05-13,2025-05-16,social
+EC-10082,Prakash Joshi,prakash.j@gmail.com,Home & Kitchen,Juicer Cold Press,1,9999,9999,1000,2000,delivered,emi,North,Delhi,2025-05-14,2025-05-15,2025-05-19,organic
+EC-10083,Shilpa Rao,shilpa.r@company.co.in,Books,Graphic Novel Anthology,5,599,2995,0,1198,cancelled,debit_card,South,Chennai,2025-05-16,,,paid_ads
+EC-10084,Nitin Jha,nitin.j@hotmail.com,Electronics,Smart Doorbell Camera,1,8999,8999,900,1800,delivered,credit_card,East,Kolkata,2025-05-18,2025-05-19,2025-05-22,organic
+EC-10085,Swati Kulkarni,swati.k@gmail.com,Fashion,Swimwear Set,1,2999,2999,300,900,delivered,upi,West,Goa,2025-05-19,2025-05-20,2025-05-23,referral
+EC-10086,Ramesh Iyer,ramesh.i@outlook.com,Beauty,Eye Cream Anti-Dark,2,1799,3598,360,1079,delivered,upi,South,Bangalore,2025-05-21,2025-05-22,2025-05-25,organic
+EC-10087,Abhishek Rao,abhishek.r@gmail.com,Home & Kitchen,Food Processor 1000W,1,8499,8499,850,1700,delivered,debit_card,South,Hyderabad,2025-05-23,2025-05-24,2025-05-27,social
+EC-10088,Madhuri Das,madhuri.d@yahoo.com,Electronics,Bluetooth Keyboard Slim,2,2499,4998,500,1500,returned,credit_card,East,Guwahati,2025-05-25,2025-05-26,2025-05-29,organic
+EC-10089,Aruna Patel,aruna.p@gmail.com,Fashion,Sunglasses Polarized,2,1999,3998,400,1200,delivered,upi,West,Ahmedabad,2025-05-27,2025-05-28,2025-05-31,paid_ads
+EC-10090,Saurabh Verma,saurabh.v@company.co.in,Books,Economics Explained,2,1199,2398,240,719,delivered,credit_card,North,Delhi,2025-05-28,2025-05-29,2025-06-01,organic
+EC-10091,Namita Rao,namita.r@hotmail.com,Electronics,Wireless Mouse Ergonomic,3,1499,4497,450,1349,delivered,upi,South,Chennai,2025-05-30,2025-05-31,2025-06-03,referral
+EC-10092,Anjali Nambiar,anjali.n@gmail.com,Home & Kitchen,Electric Kettle Glass,2,1999,3998,400,1199,delivered,debit_card,South,Kochi,2025-06-01,2025-06-02,2025-06-05,organic
+EC-10093,Vikash Mishra,vikash.m@outlook.com,Beauty,Night Repair Cream,2,2499,4998,500,1499,cancelled,upi,East,Patna,2025-06-03,,,social
+EC-10094,Pooja Nair,pooja.n@gmail.com,Fashion,Maxi Dress Floral,1,3999,3999,400,1200,delivered,credit_card,South,Trivandrum,2025-06-05,2025-06-06,2025-06-09,organic
+EC-10095,Sonia Das,sonia.d@yahoo.com,Electronics,Desktop Speakers 2.1,1,6999,6999,700,1400,delivered,debit_card,East,Kolkata,2025-06-07,2025-06-08,2025-06-11,paid_ads
+EC-10096,Karan Singh,karan.s@gmail.com,Home & Kitchen,Slow Cooker Digital,1,4999,4999,500,1000,delivered,emi,North,Delhi,2025-06-08,2025-06-09,2025-06-13,organic
+EC-10097,Megha Das,megha.d@company.co.in,Books,Art of War Collection,3,899,2697,270,809,returned,upi,East,Guwahati,2025-06-10,2025-06-11,2025-06-14,referral
+EC-10098,Rahul Kapoor,rahul.k2@hotmail.com,Electronics,Cable Management Kit,4,699,2796,280,839,delivered,upi,North,Noida,2025-06-12,2025-06-13,2025-06-16,organic
+EC-10099,Ananya Bose,ananya.b@gmail.com,Fashion,Winter Scarf Cashmere,2,2999,5998,600,1800,delivered,credit_card,East,Kolkata,2025-06-14,2025-06-15,2025-06-18,social
+EC-10100,Rohit Malhotra,rohit.m@outlook.com,Beauty,Perfume Gift Edition,1,6999,6999,700,2100,delivered,debit_card,West,Mumbai,2025-06-15,2025-06-16,2025-06-19,organic
+EC-10101,Nisha Gupta,nisha.g2@gmail.com,Electronics,Ring Light 18-inch,1,4999,4999,500,1500,delivered,upi,North,Delhi,2025-06-17,2025-06-18,2025-06-21,paid_ads
+EC-10102,Vivek Sharma,vivek.s@yahoo.com,Home & Kitchen,Microwave Convection,1,14999,14999,1500,3000,delivered,emi,North,Jaipur,2025-06-19,2025-06-20,2025-06-24,organic
+EC-10103,Meena Iyer,meena.i2@gmail.com,Fashion,Leggings Active Pack,3,1299,3897,390,1169,cancelled,credit_card,South,Bangalore,2025-06-21,,,referral
+EC-10104,Suraj Pillai,suraj.p@company.co.in,Electronics,VR Headset Standalone,1,34999,34999,3500,7000,delivered,emi,South,Chennai,2025-06-23,2025-06-24,2025-06-28,organic
+EC-10105,Kavita Reddy,kavita.r2@hotmail.com,Books,Mindfulness Journal Set,4,499,1996,0,798,delivered,upi,South,Hyderabad,2025-06-25,2025-06-26,2025-06-29,social
+EC-10106,Deepak Sharma,deepak.s2@gmail.com,Home & Kitchen,Ice Cream Maker,1,5999,5999,600,1200,delivered,debit_card,West,Pune,2025-06-27,2025-06-28,2025-07-01,organic
+EC-10107,Priya Menon,priya.m2@outlook.com,Beauty,Face Mask Variety Pack,5,599,2995,300,898,delivered,upi,South,Kochi,2025-06-28,2025-06-29,2025-07-02,paid_ads
+EC-10108,Amit Patel,amit.p2@gmail.com,Electronics,Smart Plug WiFi Pack,4,899,3596,360,1079,delivered,upi,West,Ahmedabad,2025-06-30,2025-07-01,2025-07-04,organic
+EC-10109,Shweta Nair,shweta.n@yahoo.com,Fashion,Chino Pants Stretch,2,2499,4998,500,1500,returned,credit_card,South,Bangalore,2025-07-02,2025-07-03,2025-07-06,referral
+EC-10110,Ravi Kumar,ravi.k@gmail.com,Home & Kitchen,Electric Grill Indoor,1,7999,7999,800,1600,delivered,emi,North,Delhi,2025-07-04,2025-07-05,2025-07-09,organic
+EC-10111,Divya Rao,divya.r@company.co.in,Electronics,USB Hub 7-Port,3,1299,3897,390,1169,delivered,debit_card,South,Chennai,2025-07-06,2025-07-07,2025-07-10,social
+EC-10112,Manish Joshi,manish.j@hotmail.com,Books,Startup Playbook Set,2,1399,2798,280,839,delivered,credit_card,West,Mumbai,2025-07-08,2025-07-09,2025-07-12,organic
+EC-10113,Geeta Sharma,geeta.s2@gmail.com,Beauty,Body Lotion Premium,3,1199,3597,360,1079,delivered,upi,North,Jaipur,2025-07-10,2025-07-11,2025-07-14,paid_ads
+EC-10114,Arun Mehta,arun.m2@outlook.com,Electronics,Portable Monitor 15.6,1,16999,16999,1700,3400,delivered,emi,West,Pune,2025-07-12,2025-07-13,2025-07-17,organic
+EC-10115,Lakshmi Pillai,lakshmi.p@gmail.com,Fashion,Formal Shirt Slim,2,2999,5998,600,1200,delivered,credit_card,South,Trivandrum,2025-07-14,2025-07-15,2025-07-18,referral
+EC-10116,Nikhil Das,nikhil.d@yahoo.com,Home & Kitchen,Sandwich Maker Grill,1,2999,2999,300,900,cancelled,upi,East,Kolkata,2025-07-15,,,organic
+EC-10117,Sneha Verma,sneha.v@gmail.com,Electronics,Desk Lamp Smart LED,2,2499,4998,500,1500,delivered,upi,North,Delhi,2025-07-17,2025-07-18,2025-07-21,social
+EC-10118,Ganesh Nair,ganesh.n@company.co.in,Beauty,Shaving Kit Luxury,1,3499,3499,350,1050,delivered,debit_card,South,Bangalore,2025-07-18,2025-07-19,2025-07-22,organic
+EC-10119,Kavitha Menon,kavitha.m@hotmail.com,Fashion,Trench Coat Classic,1,8999,8999,900,1800,delivered,credit_card,South,Chennai,2025-07-19,2025-07-20,2025-07-24,paid_ads
+EC-10120,Sanjay Reddy,sanjay.r@gmail.com,Electronics,Mechanical Numpad,1,2999,2999,300,900,delivered,upi,South,Hyderabad,2025-07-20,2025-07-21,2025-07-24,organic

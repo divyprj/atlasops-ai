@@ -64,6 +64,11 @@ Supported formats: CSV, XLSX (structured analytics), PDF (executive reports via 
 ## Getting Started
 
 ```bash
+# Windows (recommended)
+install.bat      # Check dependencies, install, validate
+start.bat        # Launch dev server with runtime info
+
+# Manual
 npm install
 npm run dev
 ```
@@ -84,6 +89,19 @@ cp .env.example .env.local
 
 > The platform operates fully without external APIs. Deterministic analytics (KPIs, forecasting, anomaly detection) run entirely client-side. Groq adds executive interpretation when configured.
 
+## Demo Datasets
+
+Pre-built operational datasets in `/datasets`:
+
+| Dataset | Domain | Rows | Tests |
+|---|---|---|---|
+| `ecommerce_orders.csv` | E-Commerce | 120 | Multi-category, returns, payment methods |
+| `saas_metrics.csv` | SaaS | 60 | MRR/ARR, churn, plan tiers |
+| `travel_operations.csv` | Travel | 100 | Bookings, destinations, agents |
+| `logistics_operations.csv` | Logistics | 110 | Shipments, delays, carriers |
+
+Stress-test datasets in `/testing` for pipeline validation (malformed CSVs, null-heavy, outliers, schema mismatches).
+
 ## Design Decisions
 
 **Client-side analytics** — All computation runs in-browser via IndexedDB. No server-side data storage. Privacy-friendly, fast, no infrastructure overhead.
@@ -94,12 +112,32 @@ cp .env.example .env.local
 
 **Runtime visibility** — The header, sidebar, and workspace monitor expose engine state, schema confidence, and model availability. No fake "AI Active" indicators.
 
-## Build
+## Build & Test
 
 ```bash
 npm run build     # Production build
+npm run test      # Vitest — 88 tests across all engines
 npm run lint      # ESLint
-npx tsc --noEmit  # TypeScript validation
+npx tsc --noEmit  # TypeScript validation (0 errors)
+```
+
+## Project Structure
+
+```
+atlasops-ai/
+├── datasets/          # Demo operational datasets (4 domains)
+├── testing/           # Stress-test datasets (edge cases)
+├── docs/              # Architecture & deployment docs
+├── src/
+│   ├── app/           # Next.js pages (11 routes)
+│   ├── components/    # React components
+│   ├── context/       # WorkspaceProvider (IndexedDB)
+│   ├── data/          # Static demo data
+│   ├── lib/           # 6 Analytics engines
+│   └── types/         # TypeScript types
+├── install.bat        # Windows setup
+├── start.bat          # Dev server launcher
+└── uninstall.bat      # Cleanup
 ```
 
 ## License

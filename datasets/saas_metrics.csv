@@ -1,0 +1,61 @@
+subscription_id,company_name,contact_email,plan,status,mrr,arr,seats,usage_percent,churn_risk,region,industry,signup_date,renewal_date,last_active,source,account_manager
+SUB-001,TechVista Solutions,ops@techvista.io,enterprise,active,24999,299988,45,82,low,North America,SaaS,2024-06-15,2025-06-15,2025-07-18,inbound,Priya Sharma
+SUB-002,DataFlow Analytics,admin@dataflow.co,professional,active,9999,119988,18,71,low,Europe,Analytics,2024-07-01,2025-07-01,2025-07-17,outbound,Vikram Iyer
+SUB-003,CloudBridge Inc,billing@cloudbridge.com,enterprise,active,34999,419988,72,91,low,North America,Infrastructure,2024-03-10,2025-03-10,2025-07-19,partner,Anita Desai
+SUB-004,PixelCraft Studio,hello@pixelcraft.design,starter,churned,2999,35988,5,12,high,Asia Pacific,Design,2024-08-20,2025-08-20,2025-03-15,inbound,Rajesh Nair
+SUB-005,NeuralEdge AI,finance@neuraledge.ai,enterprise,active,49999,599988,120,88,low,North America,AI/ML,2024-01-05,2025-01-05,2025-07-20,outbound,Priya Sharma
+SUB-006,GreenLeaf Farms,info@greenleaf.org,professional,active,7999,95988,12,65,medium,Asia Pacific,Agriculture,2024-09-12,2025-09-12,2025-07-16,inbound,Vikram Iyer
+SUB-007,Quantum Systems,billing@quantumsys.de,enterprise,active,29999,359988,55,78,low,Europe,Engineering,2024-04-22,2025-04-22,2025-07-18,partner,Anita Desai
+SUB-008,SwiftCart Retail,ops@swiftcart.in,professional,active,12999,155988,22,73,low,Asia Pacific,E-commerce,2024-05-30,2025-05-30,2025-07-19,outbound,Rajesh Nair
+SUB-009,MediTrack Health,admin@meditrack.health,enterprise,active,39999,479988,85,86,low,North America,Healthcare,2024-02-14,2025-02-14,2025-07-20,inbound,Priya Sharma
+SUB-010,CodeForge Labs,team@codeforge.dev,starter,active,4999,59988,8,58,medium,Europe,DevTools,2024-10-01,2025-10-01,2025-07-15,inbound,Vikram Iyer
+SUB-011,AeroVista Drones,sales@aerovista.co,professional,churned,14999,179988,28,22,high,North America,Aerospace,2024-06-08,2025-06-08,2025-04-10,outbound,Anita Desai
+SUB-012,FinStack Capital,billing@finstack.io,enterprise,active,44999,539988,95,92,low,North America,Fintech,2024-01-20,2025-01-20,2025-07-19,partner,Rajesh Nair
+SUB-013,EduSpark Platform,info@eduspark.edu,professional,active,8999,107988,15,67,low,Asia Pacific,EdTech,2024-07-15,2025-07-15,2025-07-17,inbound,Priya Sharma
+SUB-014,RoboLogic Automation,ops@robologic.com,enterprise,active,32999,395988,62,84,low,Europe,Robotics,2024-03-25,2025-03-25,2025-07-18,outbound,Vikram Iyer
+SUB-015,FreshBite Foods,admin@freshbite.co.in,starter,active,3999,47988,6,45,medium,Asia Pacific,Food & Bev,2024-11-10,2025-11-10,2025-07-14,inbound,Anita Desai
+SUB-016,CyberShield Security,billing@cybershield.io,enterprise,active,54999,659988,140,95,low,North America,Cybersecurity,2024-01-02,2025-01-02,2025-07-20,partner,Rajesh Nair
+SUB-017,BrightStar Media,hello@brightstar.media,professional,churned,11999,143988,20,18,high,Europe,Media,2024-08-05,2025-08-05,2025-05-22,outbound,Priya Sharma
+SUB-018,OceanView Hotels,reservations@oceanview.com,professional,active,9999,119988,16,72,low,Asia Pacific,Hospitality,2024-05-18,2025-05-18,2025-07-16,inbound,Vikram Iyer
+SUB-019,LogiCore Supply,ops@logicore.co,enterprise,active,27999,335988,48,80,low,North America,Logistics,2024-04-10,2025-04-10,2025-07-19,outbound,Anita Desai
+SUB-020,ArtisanHub Crafts,admin@artisanhub.store,starter,churned,2499,29988,4,8,high,Asia Pacific,Marketplace,2024-09-25,2025-09-25,2025-02-28,inbound,Rajesh Nair
+SUB-021,TerraForm Energy,billing@terraform.energy,enterprise,active,42999,515988,88,89,low,Europe,CleanTech,2024-02-08,2025-02-08,2025-07-18,partner,Priya Sharma
+SUB-022,VoxStream Audio,team@voxstream.fm,professional,active,7499,89988,10,61,medium,North America,Entertainment,2024-10-15,2025-10-15,2025-07-15,inbound,Vikram Iyer
+SUB-023,PharmaSync Labs,compliance@pharmasync.com,enterprise,active,37999,455988,78,87,low,Europe,Pharma,2024-03-01,2025-03-01,2025-07-20,outbound,Anita Desai
+SUB-024,NomadWork Spaces,info@nomadwork.co,starter,active,4499,53988,7,52,medium,Asia Pacific,Coworking,2024-11-20,2025-11-20,2025-07-13,inbound,Rajesh Nair
+SUB-025,SolarGrid Tech,billing@solargrid.tech,professional,active,16999,203988,32,76,low,North America,Energy,2024-06-25,2025-06-25,2025-07-17,partner,Priya Sharma
+SUB-026,MetaLearn AI,ops@metalearn.ai,enterprise,active,31999,383988,58,83,low,North America,EdTech,2024-04-15,2025-04-15,2025-07-19,outbound,Vikram Iyer
+SUB-027,UrbanNest Realty,admin@urbannest.co.in,professional,churned,8499,101988,14,15,high,Asia Pacific,Real Estate,2024-07-22,2025-07-22,2025-04-30,inbound,Anita Desai
+SUB-028,BioGenix Research,lab@biogenix.bio,enterprise,active,46999,563988,100,90,low,Europe,Biotech,2024-02-20,2025-02-20,2025-07-18,partner,Rajesh Nair
+SUB-029,SparkPay Fintech,billing@sparkpay.io,professional,active,13999,167988,25,74,low,Asia Pacific,Payments,2024-05-05,2025-05-05,2025-07-16,outbound,Priya Sharma
+SUB-030,AquaPure Systems,ops@aquapure.com,starter,active,3499,41988,5,48,medium,North America,Water Tech,2024-12-01,2025-12-01,2025-07-12,inbound,Vikram Iyer
+SUB-031,NexGen Robotics,team@nexgenbot.com,enterprise,active,38999,467988,80,86,low,North America,Robotics,2024-01-15,2025-01-15,2025-07-20,outbound,Anita Desai
+SUB-032,CraftBrew Co,hello@craftbrew.beer,starter,churned,2999,35988,4,10,high,Europe,Food & Bev,2024-08-30,2025-08-30,2025-03-20,inbound,Rajesh Nair
+SUB-033,CloudNine Travel,admin@cloudnine.travel,professional,active,10999,131988,19,69,low,Asia Pacific,Travel,2024-06-12,2025-06-12,2025-07-17,partner,Priya Sharma
+SUB-034,IronClad Insurance,billing@ironclad.insure,enterprise,active,35999,431988,68,85,low,North America,Insurance,2024-03-18,2025-03-18,2025-07-19,outbound,Vikram Iyer
+SUB-035,GlobeConnect Telecom,ops@globeconnect.net,enterprise,active,52999,635988,130,93,low,Europe,Telecom,2024-01-08,2025-01-08,2025-07-18,partner,Anita Desai
+SUB-036,PetCare Plus,info@petcareplus.com,starter,active,3999,47988,6,55,medium,North America,Pet Care,2024-10-28,2025-10-28,2025-07-14,inbound,Rajesh Nair
+SUB-037,DigitalCraft Agency,team@digitalcraft.agency,professional,active,11999,143988,21,70,low,Europe,Marketing,2024-05-25,2025-05-25,2025-07-16,outbound,Priya Sharma
+SUB-038,AutoDrive Motors,fleet@autodrive.auto,enterprise,active,41999,503988,90,88,low,North America,Automotive,2024-02-28,2025-02-28,2025-07-20,partner,Vikram Iyer
+SUB-039,ZenSpace Wellness,admin@zenspace.fit,starter,churned,4999,59988,8,5,high,Asia Pacific,Wellness,2024-09-08,2025-09-08,2025-01-15,inbound,Anita Desai
+SUB-040,ProBuild Construction,billing@probuild.co,professional,active,14999,179988,26,75,low,North America,Construction,2024-04-05,2025-04-05,2025-07-17,outbound,Rajesh Nair
+SUB-041,LinguaFlow Translate,ops@linguaflow.ai,professional,active,8999,107988,14,66,medium,Europe,Language,2024-07-10,2025-07-10,2025-07-15,inbound,Priya Sharma
+SUB-042,AgriSense IoT,team@agrisense.tech,enterprise,active,28999,347988,52,81,low,Asia Pacific,AgriTech,2024-03-30,2025-03-30,2025-07-19,partner,Vikram Iyer
+SUB-043,StyleBox Fashion,hello@stylebox.fashion,starter,active,3499,41988,5,42,medium,Europe,Fashion,2024-11-15,2025-11-15,2025-07-13,inbound,Anita Desai
+SUB-044,DataVault Storage,billing@datavault.cloud,enterprise,active,47999,575988,105,91,low,North America,Cloud,2024-01-25,2025-01-25,2025-07-18,outbound,Rajesh Nair
+SUB-045,EcoRide Mobility,admin@ecoride.green,professional,churned,9999,119988,17,20,high,Europe,Mobility,2024-06-18,2025-06-18,2025-05-05,partner,Priya Sharma
+SUB-046,MindMap Learning,ops@mindmap.edu,starter,active,4999,59988,9,57,medium,Asia Pacific,EdTech,2024-10-05,2025-10-05,2025-07-14,inbound,Vikram Iyer
+SUB-047,SteelForge Manufacturing,team@steelforge.mfg,enterprise,active,33999,407988,65,84,low,North America,Manufacturing,2024-04-20,2025-04-20,2025-07-20,outbound,Anita Desai
+SUB-048,FoodChain Supply,billing@foodchain.co,professional,active,12999,155988,23,73,low,Asia Pacific,Supply Chain,2024-05-15,2025-05-15,2025-07-16,partner,Rajesh Nair
+SUB-049,PixelForge Games,hello@pixelforge.games,professional,active,15999,191988,30,77,low,North America,Gaming,2024-06-02,2025-06-02,2025-07-17,inbound,Priya Sharma
+SUB-050,GreenTech Solutions,admin@greentech.eco,enterprise,active,36999,443988,75,87,low,Europe,CleanTech,2024-02-12,2025-02-12,2025-07-19,outbound,Vikram Iyer
+SUB-051,QuickServe POS,ops@quickserve.io,starter,active,3999,47988,6,50,medium,Asia Pacific,Restaurant,2024-12-10,2025-12-10,2025-07-12,inbound,Anita Desai
+SUB-052,NeuroPath Diagnostics,billing@neuropath.med,enterprise,active,43999,527988,92,89,low,North America,MedTech,2024-01-30,2025-01-30,2025-07-18,partner,Rajesh Nair
+SUB-053,Wanderlust Trips,team@wanderlust.travel,professional,churned,7999,95988,12,16,high,Europe,Travel,2024-07-28,2025-07-28,2025-04-18,outbound,Priya Sharma
+SUB-054,CryptoVault Exchange,admin@cryptovault.finance,enterprise,active,51999,623988,115,94,low,North America,Crypto,2024-03-05,2025-03-05,2025-07-20,partner,Vikram Iyer
+SUB-055,HomeChef Kitchen,hello@homechef.co.in,starter,churned,2999,35988,4,7,high,Asia Pacific,Food Delivery,2024-09-15,2025-09-15,2025-02-10,inbound,Anita Desai
+SUB-056,BlueSky Airlines,revenue@bluesky.air,enterprise,active,48999,587988,110,90,low,Asia Pacific,Aviation,2024-02-05,2025-02-05,2025-07-19,outbound,Rajesh Nair
+SUB-057,SmartGrid Power,ops@smartgrid.energy,professional,active,16999,203988,33,76,low,North America,Utilities,2024-04-28,2025-04-28,2025-07-17,partner,Priya Sharma
+SUB-058,TalentPulse HR,billing@talentpulse.hr,professional,active,10999,131988,18,68,low,Europe,HR Tech,2024-06-20,2025-06-20,2025-07-16,inbound,Vikram Iyer
+SUB-059,OmniChannel Retail,team@omnichannel.shop,enterprise,active,30999,371988,56,82,low,North America,Retail,2024-03-15,2025-03-15,2025-07-18,outbound,Anita Desai
+SUB-060,YogaBliss Studio,admin@yogabliss.fit,starter,active,2999,35988,4,43,medium,Asia Pacific,Fitness,2024-11-25,2025-11-25,2025-07-13,inbound,Rajesh Nair

@@ -1,0 +1,111 @@
+shipment_id,sender_name,sender_email,receiver_city,receiver_state,shipment_type,weight_kg,amount,shipping_cost,profit,status,payment_status,ship_date,delivery_date,carrier,warehouse,priority,tracking_status
+SHP-2001,Rajesh Industries,rajesh.ind@corp.in,Chennai,Tamil Nadu,Parcel,12.5,8500,1200,7300,delivered,paid,2025-01-03,2025-01-07,BlueDart,Mumbai-W1,express,delivered
+SHP-2002,Neha Fashions,neha.f@gmail.com,Lucknow,Uttar Pradesh,Bulk,45.0,22000,3500,18500,delivered,paid,2025-01-05,2025-01-12,Delhivery,Delhi-N1,standard,delivered
+SHP-2003,TechVista Solutions,techvista@corp.in,Bangalore,Karnataka,Fragile,3.2,45000,2800,42200,delivered,paid,2025-01-07,2025-01-10,FedEx,Bangalore-S1,express,delivered
+SHP-2004,Anand Textiles,anand.t@yahoo.com,Jaipur,Rajasthan,Bulk,78.0,15000,4200,10800,delivered,paid,2025-01-09,2025-01-16,DTDC,Delhi-N1,standard,delivered
+SHP-2005,Priya Cosmetics,priya.cos@outlook.com,Kolkata,West Bengal,Parcel,2.8,3500,800,2700,delivered,paid,2025-01-11,2025-01-15,Ecom Express,Kolkata-E1,standard,delivered
+SHP-2006,GreenLeaf Organics,greenleaf@corp.in,Hyderabad,Telangana,Perishable,25.0,12000,3200,8800,delivered,paid,2025-01-13,2025-01-15,BlueDart,Hyderabad-S2,express,delivered
+SHP-2007,Kiran Electronics,kiran.e@gmail.com,Pune,Maharashtra,Fragile,8.5,35000,1800,33200,delivered,paid,2025-01-15,2025-01-19,Delhivery,Mumbai-W1,standard,delivered
+SHP-2008,Suresh Pharma,suresh.ph@corp.in,Ahmedabad,Gujarat,Temperature Controlled,5.0,28000,4500,23500,delivered,paid,2025-01-17,2025-01-20,FedEx,Mumbai-W1,express,delivered
+SHP-2009,Meera Handicrafts,meera.h@yahoo.co.in,Chandigarh,Punjab,Fragile,6.0,18000,1500,16500,delivered,paid,2025-01-19,2025-01-24,DTDC,Delhi-N1,standard,delivered
+SHP-2010,DataFlow Systems,dataflow@corp.in,Noida,Uttar Pradesh,Document,0,2500,500,2000,delivered,paid,2025-01-21,2025-01-22,BlueDart,Delhi-N1,express,delivered
+SHP-2011,Lakshmi Silks,lakshmi.s@gmail.com,Coimbatore,Tamil Nadu,Bulk,32.0,42000,3800,38200,delivered,paid,2025-01-23,2025-01-30,Delhivery,Bangalore-S1,standard,delivered
+SHP-2012,Apex Manufacturing,apex.mfg@corp.in,Indore,Madhya Pradesh,Heavy Machinery,120.0,85000,12000,73000,delivered,paid,2025-01-25,2025-02-05,DTDC,Mumbai-W1,standard,delivered
+SHP-2013,Vivek Traders,vivek.tr@outlook.com,Nagpur,Maharashtra,Parcel,4.5,5200,900,4300,delivered,paid,2025-01-27,2025-01-31,Ecom Express,Mumbai-W1,standard,delivered
+SHP-2014,Sunrise Exports,sunrise@corp.in,Visakhapatnam,Andhra Pradesh,Bulk,55.0,38000,5200,32800,delivered,paid,2025-01-29,2025-02-06,BlueDart,Hyderabad-S2,standard,delivered
+SHP-2015,CloudNine Tech,cloudnine@corp.in,Gurgaon,Haryana,Document,0,1800,400,1400,delivered,paid,2025-01-31,2025-02-01,Delhivery,Delhi-N1,express,delivered
+SHP-2016,Patel Brothers,patel.bros@gmail.com,Surat,Gujarat,Bulk,68.0,29000,4800,24200,delivered,paid,2025-02-02,2025-02-10,DTDC,Mumbai-W1,standard,delivered
+SHP-2017,Madhuri Collections,madhuri.c@yahoo.com,Bhopal,Madhya Pradesh,Parcel,7.2,9500,1100,8400,delivered,paid,2025-02-04,2025-02-08,FedEx,Delhi-N1,express,delivered
+SHP-2018,InnovateTech,innovate@corp.in,Thiruvananthapuram,Kerala,Fragile,2.0,52000,3200,48800,delivered,paid,2025-02-06,2025-02-10,BlueDart,Bangalore-S1,express,delivered
+SHP-2019,Gupta Spices,gupta.sp@outlook.com,Patna,Bihar,Parcel,15.0,6800,1400,5400,delivered,paid,2025-02-08,2025-02-14,Ecom Express,Kolkata-E1,standard,delivered
+SHP-2020,Royal Furnishings,royal.f@gmail.com,Dehradun,Uttarakhand,Heavy,42.0,35000,5500,29500,delivered,paid,2025-02-10,2025-02-18,Delhivery,Delhi-N1,standard,delivered
+SHP-2021,Anika Jewellers,anika.j@corp.in,Mumbai,Maharashtra,Valuable,0.5,65000,2000,63000,delivered,paid,2025-02-12,2025-02-13,FedEx,Mumbai-W1,express,delivered
+SHP-2022,Harvest Foods,harvest@yahoo.co.in,Kochi,Kerala,Perishable,30.0,18000,3600,14400,delayed,paid,2025-02-14,2025-02-22,DTDC,Bangalore-S1,express,delayed_at_hub
+SHP-2023,DigiPrint Solutions,digiprint@corp.in,Guwahati,Assam,Parcel,8.0,7200,1800,5400,delivered,paid,2025-02-16,2025-02-24,BlueDart,Kolkata-E1,standard,delivered
+SHP-2024,Sharma Steels,sharma.st@gmail.com,Raipur,Chhattisgarh,Heavy Machinery,95.0,48000,8500,39500,delivered,paid,2025-02-18,2025-03-01,DTDC,Mumbai-W1,economy,delivered
+SHP-2025,Nidhi Cosmetics,nidhi.cos@outlook.com,Ranchi,Jharkhand,Parcel,3.0,4200,950,3250,delivered,paid,2025-02-20,2025-02-25,Ecom Express,Kolkata-E1,standard,delivered
+SHP-2026,TrueNorth Logistics,truenorth@corp.in,Jammu,Jammu & Kashmir,Bulk,38.0,22000,4200,17800,delivered,paid,2025-02-22,2025-03-04,Delhivery,Delhi-N1,standard,delivered
+SHP-2027,Bharat Auto Parts,bharat.ap@gmail.com,Ludhiana,Punjab,Heavy,28.0,15500,2800,12700,delivered,paid,2025-02-24,2025-03-02,BlueDart,Delhi-N1,standard,delivered
+SHP-2028,Sapna Publishers,sapna.pub@yahoo.com,Mysore,Karnataka,Bulk,50.0,8000,3500,4500,delivered,paid,2025-02-26,2025-03-06,DTDC,Bangalore-S1,economy,delivered
+SHP-2029,MediCare Supplies,medicare@corp.in,Vadodara,Gujarat,Temperature Controlled,4.0,32000,4800,27200,delivered,paid,2025-02-28,2025-03-03,FedEx,Mumbai-W1,express,delivered
+SHP-2030,Kavitha Handicrafts,kavitha.h@outlook.com,Mangalore,Karnataka,Fragile,5.5,12000,1200,10800,returned,paid,2025-03-02,2025-03-10,Ecom Express,Bangalore-S1,standard,returned_to_sender
+SHP-2031,OmniTech Solutions,omnitech@corp.in,Bhubaneswar,Odisha,Document,0,3200,600,2600,delivered,paid,2025-03-04,2025-03-05,BlueDart,Kolkata-E1,express,delivered
+SHP-2032,Raman Textiles,raman.t@gmail.com,Madurai,Tamil Nadu,Bulk,40.0,25000,3600,21400,delivered,paid,2025-03-06,2025-03-13,Delhivery,Bangalore-S1,standard,delivered
+SHP-2033,NexGen Robotics,nexgen@corp.in,Pune,Maharashtra,Fragile,15.0,78000,3500,74500,delivered,paid,2025-03-08,2025-03-11,FedEx,Mumbai-W1,express,delivered
+SHP-2034,Jain Dry Fruits,jain.df@yahoo.co.in,Nagpur,Maharashtra,Parcel,10.0,9500,1100,8400,delivered,paid,2025-03-10,2025-03-15,DTDC,Mumbai-W1,standard,delivered
+SHP-2035,Emerald Exports,emerald@corp.in,Vizag,Andhra Pradesh,Bulk,62.0,45000,5800,39200,in_transit,paid,2025-03-12,,Ecom Express,Hyderabad-S2,standard,in_transit_to_hub
+SHP-2036,Pavan Electronics,pavan.e@gmail.com,Warangal,Telangana,Fragile,6.8,28000,1500,26500,delivered,paid,2025-03-14,2025-03-18,BlueDart,Hyderabad-S2,express,delivered
+SHP-2037,Supreme Plastics,supreme@corp.in,Rajkot,Gujarat,Bulk,85.0,18000,4200,13800,delivered,paid,2025/03/15,2025-03-22,Delhivery,Mumbai-W1,economy,delivered
+SHP-2038,Anita Garments,anita.g@outlook.com,Amritsar,Punjab,Parcel,12.0,7800,1300,6500,delivered,paid,2025-03-18,2025-03-23,DTDC,Delhi-N1,standard,delivered
+SHP-2039,BioGenesis Labs,biogenesis@corp.in,Hyderabad,Telangana,Temperature Controlled,2.5,55000,5200,49800,delivered,paid,2025-03-20,2025-03-22,FedEx,Hyderabad-S2,express,delivered
+SHP-2040,Eastern Spices,eastern.sp@gmail.com,Siliguri,West Bengal,Parcel,8.5,5600,1400,4200,delivered,paid,2025-03-22,2025-03-29,Ecom Express,Kolkata-E1,standard,delivered
+SHP-2041,VisionCraft Media,visioncraft@corp.in,Mumbai,Maharashtra,Parcel,3.0,15000,800,14200,delivered,paid,2025-03-24,2025-03-26,BlueDart,Mumbai-W1,express,delivered
+SHP-2042,Srinivas Agro,srinivas.a@yahoo.com,Guntur,Andhra Pradesh,Bulk,55.0,12000,3800,8200,delayed,paid,2025-03-26,2025-04-08,DTDC,Hyderabad-S2,economy,delayed_weather
+SHP-2043,QuickByte Snacks,quickbyte@corp.in,Nashik,Maharashtra,Perishable,20.0,9200,2200,7000,delivered,paid,2025-03-28,2025-03-31,Delhivery,Mumbai-W1,express,delivered
+SHP-2044,Taneja Brothers,taneja.b@outlook.com,Kanpur,Uttar Pradesh,Parcel,7.0,6500,1000,5500,delivered,paid,2025-03-30,2025-04-04,FedEx,Delhi-N1,standard,delivered
+SHP-2045,Pinnacle Imports,pinnacle@corp.in,Delhi,Delhi,Valuable,1.2,280000,3500,276500,delivered,paid,2025-04-01,2025-04-02,FedEx,Delhi-N1,express,delivered
+SHP-2046,Ganesh Ceramics,ganesh.c@gmail.com,Morbi,Gujarat,Fragile,35.0,22000,4500,17500,delivered,paid,2025-04-03,2025-04-10,DTDC,Mumbai-W1,standard,delivered
+SHP-2047,Arun Polymers,arun.p@yahoo.co.in,Vapi,Gujarat,Hazardous,18.0,42000,6800,35200,delivered,paid,2025-04-05,2025-04-12,BlueDart,Mumbai-W1,express,delivered
+SHP-2048,NorthStar Pharma,northstar@corp.in,Baddi,Himachal Pradesh,Temperature Controlled,8.0,68000,5500,62500,delivered,paid,2025-04-07,2025-04-11,Delhivery,Delhi-N1,express,delivered
+SHP-2049,Lata Sarees,lata.s@outlook.com,Varanasi,Uttar Pradesh,Parcel,4.0,8500,900,7600,returned,paid,2025-04-09,2025-04-18,Ecom Express,Delhi-N1,standard,returned_wrong_address
+SHP-2050,CyberEdge Systems,cyberedge@corp.in,Bangalore,Karnataka,Fragile,5.5,62000,2800,59200,delivered,paid,2025-04-11,2025-04-14,FedEx,Bangalore-S1,express,delivered
+SHP-2051,Mahesh Fertilizers,mahesh.f@gmail.com,Trichy,Tamil Nadu,Bulk,72.0,16000,4500,11500,delivered,paid,2025-04-13,2025-04-21,DTDC,Bangalore-S1,economy,delivered
+SHP-2052,Radha Sweets,radha.sw@yahoo.com,Mathura,Uttar Pradesh,Perishable,12.0,3800,1200,2600,delivered,paid,2025-04-15,2025-04-17,BlueDart,Delhi-N1,express,delivered
+SHP-2053,Atlas Engineering,atlas.eng@corp.in,Jamshedpur,Jharkhand,Heavy Machinery,110.0,72000,9800,62200,in_transit,partial,2025-04-17,,Delhivery,Kolkata-E1,standard,in_transit_to_destination
+SHP-2054,Chandni Chowk Traders,chandni@outlook.com,Agra,Uttar Pradesh,Parcel,6.0,4800,800,4000,delivered,paid,2025-04-19,2025-04-22,Ecom Express,Delhi-N1,standard,delivered
+SHP-2055,FreshFarm Produce,freshfarm@corp.in,Nashik,Maharashtra,Perishable,28.0,15000,3200,11800,cancelled,refunded,2025-04-21,,FedEx,Mumbai-W1,express,cancelled_by_sender
+SHP-2056,Vikram Metals,vikram.m@gmail.com,Salem,Tamil Nadu,Heavy,45.0,32000,5200,26800,delivered,paid,2025-04-23,2025-05-01,DTDC,Bangalore-S1,standard,delivered
+SHP-2057,Pooja Garments,pooja.g@yahoo.co.in,Tirupur,Tamil Nadu,Bulk,38.0,18500,3200,15300,delivered,paid,2025-04-25,2025-05-02,BlueDart,Bangalore-S1,standard,delivered
+SHP-2058,DataVault Solutions,datavault@corp.in,Pune,Maharashtra,Fragile,4.0,48000,2200,45800,delivered,paid,2025-04-27,2025-04-30,Delhivery,Mumbai-W1,express,delivered
+SHP-2059,Mohan Dairy,mohan.d@outlook.com,Anand,Gujarat,Perishable,35.0,8500,2800,5700,delayed,paid,2025-04-29,2025-05-08,Ecom Express,Mumbai-W1,standard,delayed_customs
+SHP-2060,Zenith Optics,zenith@corp.in,Dehradun,Uttarakhand,Fragile,2.0,38000,1800,36200,delivered,paid,2025-05-01,2025-05-05,FedEx,Delhi-N1,express,delivered
+SHP-2061,Bhaskar Chemicals,bhaskar.c@gmail.com,Ankleshwar,Gujarat,Hazardous,22.0,25000,5500,19500,delivered,paid,2025-05-03,2025-05-10,BlueDart,Mumbai-W1,express,delivered
+SHP-2062,Suma Silks,suma.s@yahoo.com,Kanchipuram,Tamil Nadu,Parcel,5.0,42000,1100,40900,delivered,paid,2025-05-05,2025-05-09,DTDC,Bangalore-S1,standard,delivered
+SHP-2063,QuantumLeap AI,quantumleap@corp.in,Hyderabad,Telangana,Parcel,3.5,35000,1500,33500,in_transit,paid,2025-05-07,,Delhivery,Hyderabad-S2,express,in_transit_to_hub
+SHP-2064,Shakti Power Tools,shakti.pt@outlook.com,Coimbatore,Tamil Nadu,Heavy,30.0,19500,3800,15700,delivered,paid,2025-05-09,2025-05-16,Ecom Express,Bangalore-S1,standard,delivered
+SHP-2065,Natraj Arts,natraj.a@gmail.com,Jaipur,Rajasthan,Fragile,8.0,28000,1600,26400,delivered,paid,2025-05-11,2025-05-15,FedEx,Delhi-N1,express,delivered
+SHP-2066,Chettinad Spices,chettinad@corp.in,Sivaganga,Tamil Nadu,Parcel,14.0,7200,1800,5400,delivered,paid,2025-05-13,2025-05-20,BlueDart,Bangalore-S1,standard,delivered
+SHP-2067,UrbanNest Furniture,urbannest@yahoo.co.in,Gurgaon,Haryana,Heavy,65.0,55000,7200,47800,delivered,paid,2025-05-15,2025-05-22,DTDC,Delhi-N1,standard,delivered
+SHP-2068,Rani Textiles,rani.t@outlook.com,Erode,Tamil Nadu,Bulk,42.0,15000,3200,11800,delivered,paid,2025-05-17,2025-05-24,Delhivery,Bangalore-S1,economy,delivered
+SHP-2069,SkyHigh Drones,skyhigh@corp.in,Bangalore,Karnataka,Fragile,6.5,75000,3500,71500,returned,paid,2025-05-19,2025-05-28,FedEx,Bangalore-S1,express,returned_damaged
+SHP-2070,Mahalaxmi Jewellers,mahalaxmi@gmail.com,Thrissur,Kerala,Valuable,0.8,310000,4200,305800,delivered,paid,2025-05-21,2025-05-23,FedEx,Bangalore-S1,express,delivered
+SHP-2071,Green Valley Tea,greenvalley@yahoo.com,Dibrugarh,Assam,Parcel,20.0,11000,2800,8200,delivered,paid,2025-05-23,2025-05-31,BlueDart,Kolkata-E1,standard,delivered
+SHP-2072,Ajay Electronics,ajay.e@outlook.com,Meerut,Uttar Pradesh,Fragile,9.0,22000,1400,20600,delivered,paid,2025-05-25,2025-05-29,Ecom Express,Delhi-N1,standard,delivered
+SHP-2073,ProBuild Construction,probuild@corp.in,Ahmedabad,Gujarat,Heavy Machinery,98.0,62000,8500,53500,in_transit,partial,2025-05-27,,DTDC,Mumbai-W1,standard,in_transit_customs_hold
+SHP-2074,Devi Sarees,devi.s@gmail.com,Banaras,Uttar Pradesh,Parcel,3.5,15500,800,14700,delivered,paid,2025-05-29,2025-06-02,Delhivery,Delhi-N1,express,delivered
+SHP-2075,AgriTech Solutions,agritech@corp.in,Nashik,Maharashtra,Parcel,7.0,9800,1100,8700,delivered,paid,2025-05-31,2025-06-04,FedEx,Mumbai-W1,standard,delivered
+SHP-2076,Bansal Trading Co,bansal@yahoo.co.in,Ludhiana,Punjab,Bulk,58.0,28000,4500,23500,delivered,paid,2025-06-02,2025-06-10,BlueDart,Delhi-N1,standard,delivered
+SHP-2077,Coral Reef Exports,coralreef@corp.in,Tuticorin,Tamil Nadu,Parcel,12.0,32000,2200,29800,delivered,paid,2025-06-04,2025-06-09,DTDC,Bangalore-S1,express,delivered
+SHP-2078,Nayak Pharmaceuticals,nayak.ph@outlook.com,Goa,Goa,Temperature Controlled,5.5,45000,4800,40200,delivered,paid,2025-06-06,2025-06-09,Delhivery,Mumbai-W1,express,delivered
+SHP-2079,Eastern Timber,eastern.t@gmail.com,Shillong,Meghalaya,Heavy,40.0,18000,5500,12500,delayed,paid,2025-06-08,2025-06-22,Ecom Express,Kolkata-E1,economy,delayed_remote_area
+SHP-2080,TechMinds IT,techminds@corp.in,Noida,Uttar Pradesh,Fragile,2.5,58000,1200,56800,delivered,paid,2025-06-10,2025-06-12,FedEx,Delhi-N1,express,delivered
+SHP-2081,Kamala Oils,kamala.o@yahoo.com,Rajahmundry,Andhra Pradesh,Hazardous,18.0,12000,3200,8800,delivered,paid,2025-06-12,2025-06-18,BlueDart,Hyderabad-S2,standard,delivered
+SHP-2082,NextWave Systems,nextwave@corp.in,Chennai,Tamil Nadu,Parcel,4.0,42000,1500,40500,delivered,paid,2025-06-14,2025-06-17,DTDC,Bangalore-S1,express,delivered
+SHP-2083,Gulab Perfumers,gulab.p@outlook.com,Kannauj,Uttar Pradesh,Parcel,6.0,8500,1100,7400,delivered,paid,2025-06-16,2025-06-21,Delhivery,Delhi-N1,standard,delivered
+SHP-2084,MegaWatt Energy,megawatt@corp.in,Silvassa,Dadra & Nagar Haveli,Heavy Machinery,130.0,78000,11000,67000,in_transit,paid,2025-06-18,,DTDC,Mumbai-W1,standard,in_transit_loading
+SHP-2085,Shreya Boutique,shreya.b@gmail.com,Udaipur,Rajasthan,Parcel,2.5,5200,700,4500,delivered,paid,2025-06-20,2025-06-24,Ecom Express,Delhi-N1,standard,delivered
+SHP-2086,CloudSync Technologies,cloudsync@corp.in,Pune,Maharashtra,Fragile,3.0,65000,2000,63000,delivered,paid,2025-06-22,2025-06-24,FedEx,Mumbai-W1,express,delivered
+SHP-2087,Vinod Chemicals,vinod.c@yahoo.co.in,Vadodara,Gujarat,Hazardous,25.0,22000,4800,17200,delivered,paid,2025-06-24,2025-07-01,BlueDart,Mumbai-W1,express,delivered
+SHP-2088,Heritage Crafts,heritage.c@outlook.com,Jodhpur,Rajasthan,Fragile,7.5,15000,1300,13700,cancelled,refunded,2025-06-26,,Delhivery,Delhi-N1,standard,cancelled_by_receiver
+SHP-2089,InfoEdge Analytics,infoedge@corp.in,Hyderabad,Telangana,Document,0.5,2800,500,2300,delivered,paid,2025-06-28,2025-06-29,DTDC,Hyderabad-S2,express,delivered
+SHP-2090,Sagar Marine,sagar.m@gmail.com,Mangalore,Karnataka,Heavy,55.0,38000,6200,31800,delivered,paid,2025-06-30,2025-07-08,Ecom Express,Bangalore-S1,standard,delivered
+SHP-2091,Prism Optics,prism@corp.in,Dehradun,Uttarakhand,Fragile,1.5,48000,1800,46200,delivered,paid,2025-07-02,2025-07-05,FedEx,Delhi-N1,express,delivered
+SHP-2092,Bharat Seeds,bharat.s@yahoo.com,Dharwad,Karnataka,Parcel,15.0,6500,1400,5100,delivered,paid,2025-07-04,2025-07-10,BlueDart,Bangalore-S1,standard,delivered
+SHP-2093,DigitalVerse,digitalverse@corp.in,Mumbai,Maharashtra,Parcel,2.0,28000,800,27200,delivered,paid,2025-07-06,2025-07-08,Delhivery,Mumbai-W1,express,delivered
+SHP-2094,Sona Jewellers,sona.j@outlook.com,Rajkot,Gujarat,Valuable,0.3,500,350,150,returned,paid,2025-07-08,2025-07-15,FedEx,Mumbai-W1,express,returned_inspection_fail
+SHP-2095,Kirti Agro,kirti.a@gmail.com,Indore,Madhya Pradesh,Bulk,48.0,14000,3500,10500,delivered,paid,2025-07-10,2025-07-17,DTDC,Mumbai-W1,economy,delivered
+SHP-2096,WaveForm Audio,waveform@corp.in,Bangalore,Karnataka,Fragile,8.0,52000,2500,49500,delivered,paid,2025-07-12,2025-07-15,Ecom Express,Bangalore-S1,express,delivered
+SHP-2097,Sahara Imports,sahara@yahoo.co.in,Jodhpur,Rajasthan,Bulk,35.0,25000,3800,21200,delivered,paid,2025-07-14,2025-07-20,BlueDart,Delhi-N1,standard,delivered
+SHP-2098,NanoTech Materials,nanotech@corp.in,Chennai,Tamil Nadu,Fragile,1.0,82000,3200,78800,cancelled,refunded,2025-07-16,,Delhivery,Bangalore-S1,express,cancelled_out_of_stock
+SHP-2099,Shyam Steels,shyam.s@outlook.com,Rourkela,Odisha,Heavy,75.0,42000,7500,34500,delivered,paid,2025-07-17,2025-07-25,DTDC,Kolkata-E1,standard,delivered
+SHP-2100,MedLife Diagnostics,medlife@corp.in,Delhi,Delhi,Temperature Controlled,3.0,35000,4200,30800,delivered,paid,2025-07-17,2025-07-18,FedEx,Delhi-N1,express,delivered
+SHP-2101,Ravi Plastics,ravi.p@gmail.com,Ahmedabad,Gujarat,Bulk,42.0,12000,3200,8800,delivered,paid,2025-07-18,2025-07-24,Ecom Express,Mumbai-W1,standard,delivered
+SHP-2102,GoldenHarvest Foods,goldenharvest@corp.in,Mysore,Karnataka,Perishable,22.0,9500,2800,6700,delivered,paid,2025-07-18,2025-07-21,BlueDart,Bangalore-S1,express,delivered
+SHP-2103,StarLight Imports,starlight@yahoo.com,Mumbai,Maharashtra,Valuable,0.5,265000,5500,259500,delivered,paid,2025-07-19,2025-07-20,FedEx,Mumbai-W1,express,delivered
+SHP-2104,Amit Polymers,amit.po@outlook.com,Baroda,Gujarat,Hazardous,20.0,18000,4200,13800,delayed,paid,2025-07-19,2025-07-28,DTDC,Mumbai-W1,express,delayed_hazmat_check
+SHP-2105,ClearView Glass,clearview@corp.in,Firozabad,Uttar Pradesh,Fragile,30.0,22000,3500,18500,delivered,paid,2025-07-19,2025-07-25,Delhivery,Delhi-N1,standard,delivered
+SHP-2106,TrueBlue Textiles,trueblue@gmail.com,Surat,Gujarat,Bulk,60.0,35000,4800,30200,delivered,paid,2025-07-20,2025-07-27,BlueDart,Mumbai-W1,standard,delivered
+SHP-2107,SilverLine Electronics,silverline@corp.in,Noida,Uttar Pradesh,Fragile,5.0,55000,2000,53000,delivered,paid,2025-07-20,2025-07-22,Ecom Express,Delhi-N1,express,delivered
+SHP-2108,Coastal Fisheries,coastal.f@yahoo.co.in,Kochi,Kerala,Perishable,40.0,12000,4500,7500,delivered,paid,2025-07-20,2025-07-23,DTDC,Bangalore-S1,express,delivered
+SHP-2109,OmegaTech Solutions,omegatech@corp.in,Pune,Maharashtra,Parcel,3.5,42000,1200,40800,delivered,paid,2025-07-20,2025-07-22,FedEx,Mumbai-W1,express,delivered
+SHP-2110,Kapoor Exports Ltd,kapoor.exp@corp.in,Kolkata,West Bengal,Bulk,90.0,58000,8200,49800,delivered,paid,2025-07-20,2025-07-28,Delhivery,Kolkata-E1,standard,delivered

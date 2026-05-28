@@ -1,0 +1,16 @@
+booking_id,customer_name,customer_email,destination,package_type,pax,amount,profit,status,payment_status,booking_date,travel_date,agent_name,source,region,notes,duration_days
+TRV-7001,Aarav Mehta,aarav.mehta@gmail.com,Goa,Beach Getaway,2,45000,9000,completed,paid,2025-01-10,2025-01-20,Priya Sharma,website,West,Honeymoon couple,5
+TRV-7002,Sneha Kulkarni,sneha.k@yahoo.co.in,Manali,Adventure Trek,4,78000,17160,completed,paid,2025-01-15,2025-02-01,Vikram Iyer,referral,North,Group trek,7
+TRV-7003,Rohit Banerjee,rohit.b@outlook.com,Kerala,Backwaters Cruise,3,62000,12400,confirmed,partial,2025-01-20,2025-03-15,Anita Desai,walk-in,South,Houseboat with AC,4
+TRV-7001,Aarav Mehta,aarav.mehta@gmail.com,Goa,Beach Getaway,2,45000,9000,completed,paid,2025-01-10,2025-01-20,Priya Sharma,website,West,Honeymoon couple,5
+TRV-7004,Priyanka Nair,priyanka.nair@hotmail.com,Maldives,Luxury Island,2,285000,71250,completed,paid,2025-02-01,2025-02-14,Priya Sharma,website,International,Valentine special,6
+TRV-7005,Amit Joshi,amit.joshi@rediffmail.com,Jaipur,Heritage Tour,5,55000,11000,completed,paid,2025-02-10,2025-02-28,Rajesh Nair,website,North,Palace dinner,3
+TRV-7002,Sneha Kulkarni,sneha.k@yahoo.co.in,Manali,Adventure Trek,4,78000,17160,completed,paid,2025-01-15,2025-02-01,Vikram Iyer,referral,North,Group trek,7
+TRV-7006,Kavita Reddy,kavita.r@gmail.com,Dubai,Shopping Festival,2,195000,48750,confirmed,paid,2025-03-01,2025-03-20,Meera Krishnan,social_media,International,DSF package,5
+TRV-7003,Rohit Banerjee,rohit.b@outlook.com,Kerala,Backwaters Cruise,3,62000,12400,confirmed,partial,2025-01-20,2025-03-15,Anita Desai,walk-in,South,Houseboat with AC,4
+TRV-7007,Deepak Tiwari,deepak.t@yahoo.com,Ladakh,Bike Expedition,6,142000,28400,completed,paid,2025-03-10,2025-06-10,Vikram Iyer,referral,North,Royal Enfield group,12
+TRV-7008,Nisha Agarwal,nisha.a@gmail.com,Thailand,Beach & Culture,2,135000,33750,cancelled,refunded,2025-03-15,2025-05-05,Priya Sharma,website,International,Visa delay,7
+TRV-7004,Priyanka Nair,priyanka.nair@hotmail.com,Maldives,Luxury Island,2,285000,71250,completed,paid,2025-02-01,2025-02-14,Priya Sharma,website,International,Valentine special,6
+TRV-7009,Suresh Patil,suresh.patil@corp.in,Andaman,Island Hopper,4,98000,19600,completed,paid,2025-04-01,2025-04-15,Anita Desai,corporate,South,Corporate retreat,6
+TRV-7005,Amit Joshi,amit.joshi@rediffmail.com,Jaipur,Heritage Tour,5,55000,11000,completed,paid,2025-02-10,2025-02-28,Rajesh Nair,website,North,Palace dinner,3
+TRV-7010,Meghna Sharma,meghna.s@outlook.com,Shimla,Family Vacation,3,52000,10400,pending,unpaid,2025-04-20,2025-05-10,Rajesh Nair,walk-in,North,Hill station getaway,4

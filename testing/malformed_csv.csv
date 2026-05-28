@@ -1,0 +1,11 @@
+booking_id,customer_name,customer_email,destination,package_type,pax,amount,status,booking_date
+TRV-9001,Amit Sharma,amit.s@gmail.com,Goa,Beach Getaway,2,45000,completed,2025-01-10
+TRV-9002,Neha Verma,neha.v@yahoo.com,Manali,Adventure Trek,4,78000,confirmed,2025-02-05
+TRV-9003,Raj Patel,raj.p@outlook.com,Kerala, Backwaters,Luxury Cruise,2,62000,completed,2025-03-12
+TRV-9004,Priya Nair,priya.n@gmail.com,Jaipur,Heritage Tour,3,55000,pending,2025-04-01
+TRV-9005,Vikram Singh,vikram.s@corp.in,Dubai,"Shopping Festival,5,195000,confirmed,2025-04-15
+TRV-9006,Sunita Rao,sunita.r@yahoo.com,Thailand,Beach Package,2,135000,completed,2025-05-02
+
+TRV-9008,Kiran Kumar,kiran.k@gmail.com,Ladakh,Bike Tour,6,142000,confirmed,2025-06-10
+TRV-9009	Meera Das	meera.d@outlook.com	Singapore	City Explorer	2	165000	completed	2025-06-25
+TRV-9010,Ananya Bhatt,ananya.b@gmail.com,Maldives,Island Retreat,2,285000,pending,2025-07-08

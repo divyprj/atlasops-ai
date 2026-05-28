@@ -1,0 +1,21 @@
+booking_id,customer_name,customer_email,destination,package_type,pax,amount,profit,status,payment_status,booking_date,travel_date,agent_name,source,region,notes,duration_days
+TRV-5001,Aarav Mehta,aarav.mehta@gmail.com,Goa,Beach Getaway,2,45000,9000,completed,paid,2025-01-10,2025-01-20,Priya Sharma,website,West,Normal booking,5
+TRV-5002,Sneha Kulkarni,sneha.k@yahoo.co.in,Manali,Adventure Trek,4,78000,17160,completed,paid,2025-01-20,2025-02-01,Vikram Iyer,referral,North,Normal booking,7
+TRV-5003,Mukesh Ambani Corp,corporate@reliance.com,Europe,Ultra Luxury World Tour,25,52000000,13000000,confirmed,paid,2025-02-01,2025-04-01,Meera Krishnan,corporate,International,EXTREME OUTLIER - Corporate mega-tour for board members,45
+TRV-5004,Rohit Banerjee,rohit.b@outlook.com,Kerala,Backwaters Cruise,3,62000,12400,confirmed,partial,2025-02-10,2025-03-15,Anita Desai,walk-in,South,Normal booking,4
+TRV-5005,Priyanka Nair,priyanka.nair@hotmail.com,Maldives,Luxury Island,2,285000,71250,completed,paid,2025-02-20,2025-03-14,Priya Sharma,website,International,Normal premium booking,6
+TRV-5006,Tata Group Travel,tata.travel@tata.com,Global,Executive World Circuit,50,75000000,18750000,confirmed,paid,2025-03-01,2025-05-01,Vikram Iyer,corporate,International,EXTREME OUTLIER - Executive retreat across 12 countries,60
+TRV-5007,Amit Joshi,amit.joshi@rediffmail.com,Jaipur,Heritage Tour,5,55000,11000,completed,paid,2025-03-10,2025-03-28,Rajesh Nair,website,North,Normal booking,3
+TRV-5008,Sarala Devi,sarala.d@gmail.com,Agra,Heritage Deluxe,4,0,0,cancelled,refunded,2025-03-20,2025-04-10,Priya Sharma,corporate,North,ZERO AMOUNT - Complimentary corporate gift,2
+TRV-5009,Kavita Reddy,kavita.r@gmail.com,Dubai,Shopping Festival,2,195000,48750,confirmed,paid,2025-04-01,2025-04-20,Meera Krishnan,social_media,International,Normal booking,5
+TRV-5010,Deepak Tiwari,deepak.t@yahoo.com,Ladakh,Bike Expedition,6,142000,28400,completed,paid,2025-04-10,2025-06-10,Vikram Iyer,referral,North,Normal booking,12
+TRV-5011,Birla Enterprises,birla.travel@adityabirla.com,Worldwide,Platinum Executive Package,30,68500000,17125000,pending,partial,2025-04-20,2025-07-01,Anita Desai,corporate,International,EXTREME OUTLIER - Annual leadership summit global tour,30
+TRV-5012,Cancelled Client A,cancel.a@gmail.com,Goa,Beach Package,2,-15000,-3000,cancelled,refund_pending,2025-05-01,2025-05-20,Rajesh Nair,website,West,NEGATIVE AMOUNT - Refund adjustment entry,4
+TRV-5013,Nisha Agarwal,nisha.a@gmail.com,Thailand,Beach & Culture,2,135000,33750,cancelled,refunded,2025-05-10,2025-06-05,Priya Sharma,website,International,Normal booking,7
+TRV-5014,Suresh Patil,suresh.patil@corp.in,Andaman,Island Hopper,4,98000,19600,completed,paid,2025-05-20,2025-06-15,Anita Desai,corporate,South,Normal booking,6
+TRV-5015,Infosys Outing,infosys.travel@infosys.com,Bali,Mega Corporate Retreat,200,55000000,11000000,confirmed,paid,2025-06-01,2025-08-01,Meera Krishnan,corporate,International,EXTREME OUTLIER - 200 pax tech company retreat,14
+TRV-5016,Vimal Rao,vimal.r@yahoo.com,Coorg,Monsoon Trek,3,34000,6800,completed,paid,2025-06-10,2025-07-05,Vikram Iyer,referral,South,Normal booking,4
+TRV-5017,Correction Entry B,correction.b@corp.in,Kerala,System Adjustment,1,-8500,-1700,cancelled,adjusted,2025-06-20,2025-07-01,Rajesh Nair,system,South,NEGATIVE AMOUNT - Billing correction entry,0
+TRV-5018,Complimentary Guest,comp.guest@gmail.com,Jaipur,Comp Stay,2,0,0,completed,waived,2025-07-01,2025-07-10,Priya Sharma,referral,North,ZERO AMOUNT - Influencer complimentary stay,3
+TRV-5019,Meghna Sharma,meghna.s@outlook.com,Shimla,Family Vacation,3,52000,10400,pending,unpaid,2025-07-10,2025-08-10,Rajesh Nair,walk-in,North,Normal booking,4
+TRV-5020,Rajiv Menon,rajiv.menon@gmail.com,Singapore,City Explorer,2,165000,41250,completed,paid,2025-07-15,2025-07-25,Meera Krishnan,website,International,Normal booking,5

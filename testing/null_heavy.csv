@@ -1,0 +1,21 @@
+booking_id,customer_name,customer_email,destination,package_type,pax,amount,profit,status,payment_status,booking_date,travel_date,agent_name,source,region,notes,duration_days
+TRV-8001,Aarav Mehta,,Goa,,2,45000,,completed,paid,2025-01-10,,,website,,Honeymoon trip,
+TRV-8002,,sneha.k@yahoo.com,,Adventure Trek,,78000,17160,,paid,,2025-02-15,Vikram Iyer,,North,,7
+TRV-8003,Rohit Banerjee,,,Backwaters Cruise,3,,,confirmed,,2025-01-20,,Anita Desai,walk-in,,,4
+,Priyanka Nair,priyanka.nair@hotmail.com,Maldives,,2,,71250,completed,paid,,2025-02-14,,website,International,,
+TRV-8005,,,,,,,,,,,,,,,,,
+TRV-8006,Kavita Reddy,kavita.r@gmail.com,Dubai,,,195000,,confirmed,paid,2025-02-01,,,social_media,International,,5
+TRV-8007,,deepak.t@yahoo.com,Ladakh,Bike Expedition,6,,,completed,,2025-02-10,2025-06-10,,referral,,,
+TRV-8008,Nisha Agarwal,,,,,135000,33750,cancelled,refunded,,,Priya Sharma,,,Cancelled due to visa delay,
+,,,Kerala,,,,,,paid,2025-03-01,2025-03-20,Anita Desai,,,Houseboat stay,5
+TRV-8010,Meghna Sharma,meghna.s@outlook.com,,Family Vacation,3,52000,,pending,unpaid,,,,walk-in,North,,
+TRV-8011,,rajiv.menon@gmail.com,Singapore,,2,165000,41250,,paid,2025-03-15,,Meera Krishnan,,International,,5
+TRV-8012,Ananya Bhatt,,,Lake Palace,,48000,,,,,2025-04-01,Priya Sharma,social_media,,,3
+TRV-8013,,,Goa,Party Package,8,125000,,,paid,2025-04-10,,Vikram Iyer,referral,West,,
+TRV-8014,Sunita Devi,sunita.d@rediffmail.com,Varanasi,,,28000,5600,completed,,,,Rajesh Nair,walk-in,,,
+TRV-8015,,,,,,,,,,,,,,,,,,
+TRV-8016,Karthik Iyer,karthik.i@outlook.com,,,2,225000,,confirmed,paid,,,Meera Krishnan,website,International,,
+TRV-8017,Pooja Verma,,Shimla,Hill Station,4,,8400,completed,paid,2025-05-01,,,website,,,4
+TRV-8018,,sanjay.g@corp.in,,Tea Plantation,,38000,,,,,2025-06-01,Priya Sharma,,South,,5
+TRV-8019,Divya Rangan,divya.r@yahoo.com,Europe,,4,348000,,confirmed,,2025-06-10,,,website,International,,
+TRV-8020,,,Rishikesh,Adventure Camp,,54000,10800,completed,paid,,2025-07-01,,social_media,North,,3

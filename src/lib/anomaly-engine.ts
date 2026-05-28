@@ -44,7 +44,7 @@ export function detectOperationalAnomalies(bookings: Booking[]): Anomaly[] {
     const cancelMean = mean(cancelRates);
     const cancelSD = stdDev(cancelRates);
 
-    monthly.forEach((m, _i) => {
+    monthly.forEach((m) => {
       if (cancelSD > 0) {
         const z = (m.cancellationRate - cancelMean) / cancelSD;
         if (z > 1.8) {

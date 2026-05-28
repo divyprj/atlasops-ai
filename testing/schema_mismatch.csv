@@ -1,0 +1,11 @@
+weird_column_1,xyz_metric,foo_bar,random_number,unknown_date
+alpha_batch_22,0.8745,positive_flux,834729,2025-01-15
+gamma_sector_9,1.2301,negative_drift,-42,2025-02-20
+beta_node_17,0.0023,neutral_state,999999,2025-03-08
+omega_cluster_4,55.781,overflow_alert,0,not_a_date
+delta_prime_11,0.4456,positive_flux,187234,2025-04-12
+zeta_fragment_3,-0.9912,critical_fail,5,15/05/2025
+theta_wave_88,100.00,positive_flux,482910,2025-06-01
+epsilon_grid_5,0.0000,null_response,,2025-06-18
+lambda_core_21,7.3334,negative_drift,123456,2025-07-02
+sigma_pulse_44,2.7183,positive_flux,-99999,
