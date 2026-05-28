@@ -6,8 +6,8 @@
 // ============================================================
 
 import React from "react";
-import { ChevronRight, Database, AlertTriangle } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { ChevronRight, Database, AlertTriangle, RotateCcw } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
 import { useWorkspace } from "@/context/workspace-context";
 import { timeAgo, cn } from "@/lib/utils";
 
@@ -27,7 +27,8 @@ const routeLabels: Record<string, string> = {
 
 export function Header() {
   const pathname = usePathname();
-  const { metadata, isReady } = useWorkspace();
+  const router = useRouter();
+  const { metadata, isReady, reset } = useWorkspace();
   const pageTitle = routeLabels[pathname] || "AtlasOps";
 
   return (
@@ -73,6 +74,14 @@ export function Header() {
             <span className="text-[9px] text-muted-foreground/50 hidden md:inline">
               {timeAgo(metadata.uploadedAt)}
             </span>
+            <span className="text-[10px] text-muted-foreground/30 hidden md:inline">|</span>
+            <button
+              onClick={async () => { await reset(); router.push("/intake"); }}
+              className="hidden md:flex items-center gap-1 text-[10px] text-muted-foreground hover:text-foreground border border-border/60 hover:border-foreground/30 rounded px-2 py-0.5 transition-all"
+            >
+              <RotateCcw size={9} />
+              New Dataset
+            </button>
           </>
         ) : (
           <div className="flex items-center gap-1.5">

@@ -42,7 +42,7 @@ const FIELD_ALIASES: Record<keyof Booking, string[]> = {
   packageType: ["package_type", "type", "category", "segment", "class", "tier", "product_type"],
   status: ["status", "booking_status", "order_status", "state", "current_status"],
   paymentStatus: ["payment_status", "payment", "pay_status", "payment_state", "paid"],
-  amount: ["amount", "total", "revenue", "price", "value", "booking_amount", "order_value", "total_amount", "sale_amount", "gross", "total_price"],
+  amount: ["amount", "total", "revenue", "price", "value", "booking_amount", "order_value", "total_amount", "sale_amount", "gross", "total_price", "mrr", "arr", "monthly_revenue", "annual_revenue", "contract_value", "deal_size", "subscription_amount", "unit_price"],
   profit: ["profit", "margin", "net", "net_revenue", "net_amount", "commission", "earnings", "net_profit"],
   bookingDate: ["booking_date", "date", "order_date", "created", "created_date", "purchase_date", "transaction_date", "booked_on", "booked_date"],
   travelDate: ["travel_date", "start_date", "departure", "departure_date", "check_in", "checkin", "service_date", "delivery_date"],
